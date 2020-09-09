@@ -1,0 +1,36 @@
+---
+title: "Timing in CHILDES"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(childesr)
+library(DT)
+```
+
+If we could get a list of common overregularizations, we could:
+
+- find all of the instances in CHILDES.
+
+- We could figure out which corpora have audio or video, and we could hand-code the reponse onset for these irregulars. 
+
+Which corpora have timestamped audio/video? We want to restrict this down to a smaller age range presumably
+```{r}
+utterances <- get_utterances(collection = c("Eng-NA", "Eng-UK"))
+
+media_transcripts <- utterances %>%
+  filter(!is.na(media_start)) %>%
+  distinct(collection_id, corpus_id, corpus_name, transcript_id)
+
+datatable(media_transcripts)
+```
+
+- We could construct some comparison set of utterances, either a random sample from the same parent/child dyads, or we could try to control for things about the overregularized items (e.g. we could compare to the correct regular form). Or another past-tense verb that it similar somehow. 
+
+```{r load-kids}
+tokens <- get_tokens(collection = "Eng-NA", token = "runned")
+
+utterances <- get_utterances(corpus = "NewEngland")
+```
