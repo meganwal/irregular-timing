@@ -14,7 +14,7 @@ If we could get a list of common overregularizations, we could:
 
 - find all of the instances in CHILDES.
 
-- We could figure out which corpora have audio or video, and we could hand-code the reponse onset for these irregulars. 
+- We could figure out which corpora have audio or video, and we could hand-code the response onset for these irregulars. 
 
 Which corpora have timestamped audio/video? We want to restrict this down to a smaller age range presumably
 ```{r}
@@ -26,6 +26,41 @@ media_transcripts <- utterances %>%
 
 datatable(media_transcripts)
 ```
+
+Pick one kid for error timing coding
+```{r}
+thomas_corpus <- utterances %>%
+  filter(corpus_name == "Thomas")
+
+thomas_verbs <- thomas_corpus %>%
+  mutate(has_verb = str_detect(part_of_speech, "v")) %>%
+  group_by(transcript_id) %>%
+  mutate(mom_response = (speaker_role == "Mother" & lag(speaker_role) == "Target_Child"),
+         lag_verb = lag(has_verb),
+         response_time = media_start - lag(media_end))
+
+mom_responses <- thomas_verbs %>%
+  filter(mom_response, lag_verb) %>%
+  filter(response_time <= 3 & response_time >= -3) %>%
+  mutate(age_floored = floor(target_child_age))
+
+
+ggplot(mom_responses, aes(x = age_floored, y = response_time, group = age_floored)) + 
+  geom_boxplot()
+```
+
+```{r}
+fraser_corpus <- utterances %>%
+  filter(target_child_name == "Fraser")
+
+
+downstairs <- fraser_corpus %>%
+  filter(str_detect(gloss, "downstairs"), speaker_code == "CHI")
+
+fraser_errors <- fraser_corpus %>%
+  mutate(error = str_detect(gloss, "\\*"),)
+```
+
 
 - We could construct some comparison set of utterances, either a random sample from the same parent/child dyads, or we could try to control for things about the overregularized items (e.g. we could compare to the correct regular form). Or another past-tense verb that it similar somehow. 
 
