@@ -1,0 +1,35 @@
+---
+title: "Irregular respose times"
+author: "Megan Waller and Dan Yurovsky"
+date: '`r Sys.Date()`'
+output:
+  html_document:
+  highlight: tango
+theme: sandstone
+code_folding: show
+toc: false
+toc_float: false
+---
+  
+```{r libraries}
+library(tidyverse)
+library(here)
+library(ggthemes)
+
+theme_set(theme_few(base_size = 12))
+
+```
+
+```{r sachs, warning = FALSE}
+sachs_utts <- read_csv(here("data/sachs_utterance_data.csv")) %>%
+  mutate(error = as.logical(error),
+         response_time = as.numeric(response_time))
+
+child_data <- sachs_utts %>%
+  filter(speaker == "CHI" & responder != "CHI")
+```
+
+```{r response-times}
+ggplot(child_data, aes(x = response_time, color = error)) + 
+  geom_density()
+```
