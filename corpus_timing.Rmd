@@ -21,15 +21,16 @@ theme_set(theme_few(base_size = 12))
 ```
 
 ```{r sachs, warning = FALSE}
-sachs_utts <- read_csv(here("data/sachs_utterance_data.csv")) %>%
+braunwald_utts <- read_csv(here("braunwald_utterance_data.csv")) %>%
   mutate(error = as.logical(error),
          response_time = as.numeric(response_time))
 
-child_data <- sachs_utts %>%
+child_data <- braunwald_utts %>%
   filter(speaker == "CHI" & responder != "CHI")
+child_data
 ```
 
 ```{r response-times}
-ggplot(child_data, aes(x = response_time, color = error)) + 
+ggplot(child_data, aes(x = response_time, color = error)) + xlim(-2,10) +
   geom_density()
 ```
