@@ -15,12 +15,13 @@ toc_float: false
 library(tidyverse)
 library(here)
 library(ggthemes)
+library(glue)
 
 theme_set(theme_few(base_size = 12))
 
 ```
 
-```{r sachs, warning = FALSE}
+```{r helpers}
 process_age <- function(age) {
   age_list <- sub("\\['P", "", age) %>%
     sub("D'\\]", "", .) %>%
@@ -32,18 +33,33 @@ process_age <- function(age) {
      
 }
 
-braunwald_utts <- read_csv(here("data/braunwald_utterance_data.csv")) %>%
-  mutate(error = as.logical(error),
-         response_time = as.numeric(response_time)) %>%
-  filter(abs(response_time) <= 3) 
+process_errors <- function(corpus) {
+  utts <- read_csv(here(glue("data/{corpus}_utterance_data.csv"))) %>%
+    mutate(error = as.logical(error),
+           response_time = as.numeric(response_time),
+           age = process_age(age)) 
 
-child_data <- braunwald_utts %>%
-  filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
+  child_data <- utts %>%
+    filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
 
-child_data
+
+  child_errors <- child_data %>%
+    filter(error)
+
+  child_errors %>%
+    select(source_file, age, utterance) %>%
+    mutate(overreg_past = "", overreg_plural = "") %>%
+    write_csv(here(glue("coded_data/{corpus}_tocode.csv")))
+}
+
+
 ```
 
-```{r response-times}
+```{r braunwald, warning = FALSE}
+process_errors("braunwald")
+```
+
+```{r response-times, eval = FALSE}
 ggplot(child_data, aes(x = response_time, color = error))  +
   geom_density()
 ```
