@@ -21,16 +21,29 @@ theme_set(theme_few(base_size = 12))
 ```
 
 ```{r sachs, warning = FALSE}
-braunwald_utts <- read_csv(here("braunwald_utterance_data.csv")) %>%
+process_age <- function(age) {
+  age_list <- sub("\\['P", "", age) %>%
+    sub("D'\\]", "", .) %>%
+    str_split(., "[:alpha:]") %>%
+    unlist()
+  
+  as.numeric(age_list[1]) * 365.25 + as.numeric(age_list[2]) * 30.5 +
+    as.numeric(age_list[3])
+     
+}
+
+braunwald_utts <- read_csv(here("data/braunwald_utterance_data.csv")) %>%
   mutate(error = as.logical(error),
-         response_time = as.numeric(response_time))
+         response_time = as.numeric(response_time)) %>%
+  filter(abs(response_time) <= 3) 
 
 child_data <- braunwald_utts %>%
-  filter(speaker == "CHI" & responder != "CHI")
+  filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
+
 child_data
 ```
 
 ```{r response-times}
-ggplot(child_data, aes(x = response_time, color = error)) + xlim(-2,10) +
+ggplot(child_data, aes(x = response_time, color = error))  +
   geom_density()
 ```
