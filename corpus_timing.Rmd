@@ -28,16 +28,21 @@ process_age <- function(age) {
     str_split(., "[:alpha:]") %>%
     unlist()
   
-  as.numeric(age_list[1]) * 365.25 + as.numeric(age_list[2]) * 30.5 +
-    as.numeric(age_list[3])
-     
+  processed_age = as.numeric(age_list[1]) * 365.25 + as.numeric(age_list[2]) * 30.5
+  
+  if(age_list[3] != "']") {
+    processed_age = processed_age + as.numeric(age_list[3])
+  }
+  
+  return(processed_age)
 }
 
 process_errors <- function(corpus) {
   utts <- read_csv(here(glue("data/{corpus}_utterance_data.csv"))) %>%
     mutate(error = as.logical(error),
-           response_time = as.numeric(response_time),
-           age = process_age(age)) 
+           response_time = as.numeric(response_time)) %>%
+    group_by(source_file) %>%
+    mutate(age = process_age(age)) 
 
   child_data <- utts %>%
     filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
@@ -49,7 +54,7 @@ process_errors <- function(corpus) {
   child_errors %>%
     select(source_file, age, utterance) %>%
     mutate(overreg_past = "", overreg_plural = "") %>%
-    write_csv(here(glue("coded_data/{corpus}_tocode.csv")))
+    write_csv(here(glue("tocode_data/{corpus}_tocode.csv")))
 }
 
 
@@ -59,15 +64,15 @@ process_errors <- function(corpus) {
 process_errors("braunwald")
 ```
 
-```{r}
+```{r read-errors}
 read_errors <- function(corpus) {
-  coded <- read_csv(here(glue("coded_data/{corpus}_tocode.csv")))
+  coded <- read_csv(here(glue("coded_data/{corpus}_coded.csv")))
 
   return(coded)
 }
 ```
 
-```{r}
+```{r braunwald-errors}
 braunwald <- read_errors("braunwald")
 
 b_errors <- braunwald %>% 
