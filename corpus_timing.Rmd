@@ -59,6 +59,21 @@ process_errors <- function(corpus) {
 process_errors("braunwald")
 ```
 
+```{r}
+read_errors <- function(corpus) {
+  coded <- read_csv(here(glue("coded_data/{corpus}_tocode.csv")))
+
+  return(coded)
+}
+```
+
+```{r}
+braunwald <- read_errors("braunwald")
+
+b_errors <- braunwald %>% 
+  filter(overreg_past == TRUE | overreg_plural == TRUE)
+```
+
 ```{r response-times, eval = FALSE}
 ggplot(child_data, aes(x = response_time, color = error))  +
   geom_density()
