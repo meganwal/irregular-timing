@@ -57,7 +57,6 @@ process_errors <- function(corpus) {
     write_csv(here(glue("tocode_data/{corpus}_tocode.csv")))
 }
 
-
 ```
 
 ```{r braunwald, warning = FALSE}
@@ -67,16 +66,54 @@ process_errors("braunwald")
 ```{r read-errors}
 read_errors <- function(corpus) {
   coded <- read_csv(here(glue("coded_data/{corpus}_coded.csv")))
-
+  coded <- coded %>% 
+    filter(overreg_past == TRUE | overreg_plural == TRUE)
   return(coded)
 }
 ```
 
 ```{r braunwald-errors}
 braunwald <- read_errors("braunwald")
+```
 
-b_errors <- braunwald %>% 
-  filter(overreg_past == TRUE | overreg_plural == TRUE)
+```{r process-errors}
+process_errors("sachs")
+process_errors("ben")
+process_errors("emily")
+process_errors("emma")
+process_errors("jillian")
+process_errors("matt")
+process_errors("roman")
+```
+
+
+```{r read-errors}
+sachs <- read_errors("sachs") #8 ORs
+ben <- read_errors("ben") #3 ORs
+emily <- read_errors("emily") #31 ORs
+emma <- read_errors("emma") #18 ORs
+jillian <- read_errors("jillian") #34 ORs
+matt <- read_errors("matt") #4 ORs
+roman <- read_errors("roman") #6 ORs
+```
+
+
+```{r nelson}
+process_errors("nelson")
+#found no errors
+
+nelson_utts <- read_csv(here(glue("data/nelson_utterance_data.csv"))) %>%
+  mutate(error = as.logical(error),
+         response_time = as.numeric(response_time)) %>%
+  group_by(source_file) %>%
+  mutate(age = process_age(age)) 
+
+nerrors <- nelson_utts %>% filter(error == TRUE)
+
+nelson_child_data <- nelson_utts %>%
+  filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
+nelson_child_errors <- nelson_child_data %>%
+    filter(error)
 ```
 
 ```{r response-times, eval = FALSE}
