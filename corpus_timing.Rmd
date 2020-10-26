@@ -43,6 +43,7 @@ process_errors <- function(corpus) {
            response_time = as.numeric(response_time)) %>%
     group_by(source_file) %>%
     mutate(age = process_age(age)) 
+  
 
   child_data <- utts %>%
     filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
@@ -52,8 +53,10 @@ process_errors <- function(corpus) {
     filter(error)
 
   child_errors %>%
-    select(source_file, age, utterance) %>%
-    mutate(overreg_past = "", overreg_plural = "") %>%
+    select(source_file, age, utterance, start_time) %>%
+    mutate(overreg_past = "", overreg_plural = "",
+           start_time = start_time / 60) %>%
+    rename(start_time_minutes = start_time) %>%
     write_csv(here(glue("tocode_data/{corpus}_tocode.csv")))
 }
 
@@ -87,18 +90,26 @@ process_errors("roman")
 ```
 
 
-```{r read-errors}
-sachs <- read_errors("sachs") #8 ORs
-ben <- read_errors("ben") #3 ORs
-emily <- read_errors("emily") #31 ORs
-emma <- read_errors("emma") #18 ORs
-jillian <- read_errors("jillian") #34 ORs
-matt <- read_errors("matt") #4 ORs
-roman <- read_errors("roman") #6 ORs
+```{r read-others-errors}
+corpus_list <- c("braunwald", "sachs", "ben", "emily", "emma", 
+             "jillian", "matt", "roman")
+
+corpus_errors <- map_dfr(corpus_list, read_errors, .id = "corpus") %>%
+  mutate(corpus = factor(corpus, labels = corpus_list),
+         age_years = age / 365.25,
+         length = str_count(utterance, " ") + 1)
+
+# sachs <- read_errors("sachs") #8 ORs
+# ben <- read_errors("ben") #3 ORs
+# emily <- read_errors("emily") #31 ORs
+# emma <- read_errors("emma") #18 ORs
+# jillian <- read_errors("jillian") #34 ORs
+# matt <- read_errors("matt") #4 ORs
+# roman <- read_errors("roman") #6 ORs
 ```
 
 
-```{r nelson}
+```{r nelson, eval = FALSE, show = FALSE}
 process_errors("nelson")
 #found no errors
 
@@ -114,6 +125,37 @@ nelson_child_data <- nelson_utts %>%
   filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
 nelson_child_errors <- nelson_child_data %>%
     filter(error)
+```
+
+```{r control_utts}
+
+
+
+make_control_utts <- function(errors_df) {
+  corpus <- pull(errors_df, corpus) %>% unique()
+ 
+  utts <- read_csv(here(glue("data/{corpus}_utterance_data.csv"))) %>%
+    mutate(error = as.logical(error)) %>%
+    filter(!error, speaker == "CHI", responder != "CHI") %>%
+    mutate(length = str_count(utterance, " ") + 1) %>%
+    group_by(source_file) %>%
+    mutate(age = process_age(age)) %>%
+    mutate(age_months = floor(age/30.5)) %>%
+    group_by(age_months, plural, past_tense, length) %>%
+    nest()
+
+  errors <- errors_df %>%
+    mutate(age_months = floor(age/30.5)) %>%
+    rename("past_tense" = "overreg_past",
+           "plural" = "overreg_plural") %>%
+    mutate_at(vars(past_tense, plural), as.character) %>%
+    fuzzy_left_join(utts, 
+                    by = c("age_months", "length", "plural", "past_tense"),
+                    match_fun = c(~(abs(.x -.y)), ~(abs(.x -.y)),
+                                  ~(as.numeric(.x==.y)), ~(as.numeric(.x==.y)))
+    
+   
+}
 ```
 
 ```{r response-times, eval = FALSE}
