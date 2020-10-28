@@ -16,6 +16,7 @@ library(tidyverse)
 library(here)
 library(ggthemes)
 library(glue)
+library(janitor)
 
 theme_set(theme_few(base_size = 12))
 
@@ -108,6 +109,32 @@ corpus_errors <- map_dfr(corpus_list, read_errors, .id = "corpus") %>%
 # roman <- read_errors("roman") #6 ORs
 ```
 
+```{r read-elan}
+read_elan <- function(file, directory = here("elan_coded")) {
+  read_delim(glue("{directory}/{file}"), "\t") %>%
+    clean_names() %>%
+    mutate(person = if_else(is.na(child_error_utterance) , "parent", "child")) %>%
+    select(-child_error_utterance, -parent_error_response, -x5) %>%
+    arrange(begin_time_msec) %>%
+    group_by(person) %>%
+    mutate(utt_num = 1:n()) %>%
+    group_by(utt_num) %>%
+    mutate(response_time = last(begin_time_msec) - first(end_time_msec)) %>%
+    ungroup() %>%
+    filter(person == "child") %>%
+    mutate(corpus_file = file) %>%
+    select(corpus_file, response_time, utt_num)
+}
+```
+
+```{r}
+elan_files <- list.files(here("elan_coded/"))
+
+map_dfr(elan_files, read_elan) 
+  
+
+```
+
 
 ```{r nelson, eval = FALSE, show = FALSE}
 process_errors("nelson")
@@ -127,7 +154,7 @@ nelson_child_errors <- nelson_child_data %>%
     filter(error)
 ```
 
-```{r control_utts}
+```{r control_utts, eval = FALSE}
 
 
 
