@@ -1,39 +1,39 @@
-source_file,age,utterance,overreg_past,overreg_plural
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020606.xml,919.5,he drinked drank it all,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020620.xml,933.5,look what I just find found in Grandma ma's cushion,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,the scrap book falled fell in the water,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,the phone run runned ran on,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,I drawed drew with him,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,I drawed drew chalk only for kids,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020718.xml,962,I falled fell off o there,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020718.xml,962,he waked woke up,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020729.xml,973,right on his foots feet,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020813.xml,987.5,like he know knew how to build my puzzles,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020902.xml,1007,he flied flew a big plane to his mommy and daddy,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020902.xml,1007,but he he goed went to his mommy and daddy way over there,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020902.xml,1007,I fighted fought with her too,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020923.xml,1028,I swinged swung it on my head,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,mouses mice don't drive in crayons car,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,have you hadded had presents and cake,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my cat ate my three mouses mice,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,I Daddy Stuart_Little and Mom Stuart_Little and I I have three mouses mice,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my cat tried to eat my mouses mice,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my but my cat eat mouses mice,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,mouses mice,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,mouses mice outside,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my mouses mice gatta got a babysitter,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my mouses mice are back in my baby,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021028.xml,1063.5,and and Rabbit gots got in one of the car,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,Mommy writed wrote a letter and I writed wrote a letter,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,I ripped it sinced since I goed went to bed,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,I goed went like this I goed went like this when I goed said ow,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,I doed did this when I goed said ow,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,and we comed came over and then it was your birthday and we make the cake,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,it died then the air comed came out,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,his mommy and daddy was were way over there,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,his mommy and daddy was were way over there xxx Sams_Club,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,her tongue tastes her tongue tastes her tongue tasteses tastes like sandpaper,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,they're they're yellin and their pants and their shirts go went awayed away,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,no she falled fell down,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030409.xml,1226.75,and Mommy sitted sat there they came here and they gave it to my mommy and she sat there and I'm gonna buy one of those toys for Tiki whoa,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emily/040216.xml,1538,well it got teared torn down,TRUE,FALSE
+source_file,age,utterance,overreg_past,overreg_plural,start_time_minutes,elan_coded
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020606.xml,919.5,he drinked drank it all,TRUE,FALSE,38.5225,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020620.xml,933.5,look what I just find found in Grandma ma's cushion,FALSE,FALSE,16.934,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,the scrap book falled fell in the water,TRUE,FALSE,11.81675,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,the phone run runned ran on,TRUE,FALSE,25.86203333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,I drawed drew with him,TRUE,FALSE,29.15705,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020704.xml,948,I drawed drew chalk only for kids,TRUE,FALSE,29.218,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020718.xml,962,I falled fell off o there,TRUE,FALSE,5.99705,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020718.xml,962,he waked woke up,TRUE,FALSE,26.07825,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020729.xml,973,right on his foots feet,FALSE,TRUE,16.44675,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020813.xml,987.5,like he know knew how to build my puzzles,FALSE,FALSE,15.00368333,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020902.xml,1007,he flied flew a big plane to his mommy and daddy,TRUE,FALSE,2.31335,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020902.xml,1007,but he he goed went to his mommy and daddy way over there,TRUE,FALSE,15.61641667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020902.xml,1007,I fighted fought with her too,TRUE,FALSE,18.28383333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/020923.xml,1028,I swinged swung it on my head,TRUE,FALSE,4.550633333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,mouses mice don't drive in crayons car,FALSE,TRUE,16.10658333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,have you hadded had presents and cake,TRUE,FALSE,20.04045,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my cat ate my three mouses mice,FALSE,TRUE,21.12303333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,I Daddy Stuart_Little and Mom Stuart_Little and I I have three mouses mice,FALSE,TRUE,21.29648333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my cat tried to eat my mouses mice,FALSE,TRUE,21.46855,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my but my cat eat mouses mice,FALSE,TRUE,21.67221667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,mouses mice,FALSE,TRUE,22.06006667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,mouses mice outside,FALSE,TRUE,22.0969,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my mouses mice gatta got a babysitter,FALSE,TRUE,29.35561667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021007.xml,1042.5,my mouses mice are back in my baby,FALSE,TRUE,29.5604,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021028.xml,1063.5,and and Rabbit gots got in one of the car,FALSE,FALSE,12.95135,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,Mommy writed wrote a letter and I writed wrote a letter,TRUE,FALSE,2.2024,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,I ripped it sinced since I goed went to bed,TRUE,FALSE,13.54418333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,I goed went like this I goed went like this when I goed said ow,TRUE,FALSE,24.44428333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/021115.xml,1081,I doed did this when I goed said ow,TRUE,FALSE,24.5438,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,and we comed came over and then it was your birthday and we make the cake,TRUE,FALSE,3.5519,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,it died then the air comed came out,TRUE,FALSE,8.561333333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,his mommy and daddy was were way over there,FALSE,FALSE,13.93961667,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,his mommy and daddy was were way over there xxx Sams_Club,FALSE,FALSE,13.99726667,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,her tongue tastes her tongue tastes her tongue tasteses tastes like sandpaper,FALSE,FALSE,15.7567,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,they're they're yellin and their pants and their shirts go went awayed away,FALSE,FALSE,22.97715,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030012.xml,1107.75,no she falled fell down,TRUE,FALSE,25.48353333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/030409.xml,1226.75,and Mommy sitted sat there they came here and they gave it to my mommy and she sat there and I'm gonna buy one of those toys for Tiki whoa,TRUE,FALSE,1.766116667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emily/040216.xml,1538,well it got teared torn down,TRUE,FALSE,9.31445,TRUE
