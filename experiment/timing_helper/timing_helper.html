@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overregularization experiment</title>
+    <script src="jspsych-6.1.0/jspsych.js"></script>
+    <script src="jspsych-6.1.0/plugins/jspsych-html-button-response.js"></script>
+    <script src="jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="jspsych-6.1.0/plugins/jspsych-survey-text.js"></script>
+    <script src="jspsych-6.1.0/plugins/jspsych-external-html.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jspsych-6.1.0/css/jspsych.css"></link>
+  </head>
+  <body></body>
+
+  <script>
+
+    /* create timeline */
+    var timeline = [];
+
+    /* define instructions trial */
+    var instructions = {
+      type: "html-button-response",
+      stimulus: "<p>Push start to start the experiments",
+      choices: ['Start'],
+      post_trial_gap: 1000
+    };
+    timeline.push(instructions);
+
+    var trial = {
+      type: 'html-button-response',
+      stimulus: function() { return "<p>Pick left or right. <br>";
+      },
+      choices: ['Error', 'Correct'],
+      on_finish: function(data){
+        jsPsych.pauseExperiment();
+        if(data.button_pressed == 0) {
+          setTimeout(jsPsych.resumeExperiment, 1000);
+        } else {
+          setTimeout(jsPsych.resumeExperiment, 500);
+        }
+       }
+    }
+
+    var procedure = {
+      timeline: [
+          {
+            type: 'html-button-response',
+            stimulus: function() { return "<p>Pick left or right. <br>";
+            },
+            choices: ['Error', 'Correct'],
+            on_finish: function(data){
+              jsPsych.pauseExperiment();
+              if(data.button_pressed == 0) {
+                setTimeout(jsPsych.resumeExperiment, 1000);
+              } else {
+                setTimeout(jsPsych.resumeExperiment, 500);
+              }
+             }
+          },
+          {
+              type: 'html-keyboard-response',
+              stimulus: function() { return "<p>" + jsPsych.timelineVariable('target_words', true) + "</p>";
+              },
+              choices: jsPsych.NO_KEYS,
+              trial_duration: 2500
+          }
+      ],
+      timeline_variables: [
+          { target_words: 'snakes and geese' },
+          { target_words: 'frogs and teeth' },
+          { target_words: 'snake and forks' }
+      ]
+    }
+    timeline.push(procedure);
+
+	var endscreen = {
+		type: 'html-button-response',
+		stimulus: "<p>End of experiment</p>",
+		choices: ['Finish']
+	};
+
+	timeline.push(endscreen);
+
+	/* start the experiment */
+  jsPsych.init({
+    timeline: timeline
+ });
+</script>
+</html>
