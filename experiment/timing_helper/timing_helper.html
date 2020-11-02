@@ -20,32 +20,17 @@
     /* define instructions trial */
     var instructions = {
       type: "html-button-response",
-      stimulus: "<p>Push start to start the experiments",
+      stimulus: "<h2>Push start to start the experiment</h2>",
       choices: ['Start'],
       post_trial_gap: 1000
     };
     timeline.push(instructions);
 
-    var trial = {
-      type: 'html-button-response',
-      stimulus: function() { return "<p>Pick left or right. <br>";
-      },
-      choices: ['Error', 'Correct'],
-      on_finish: function(data){
-        jsPsych.pauseExperiment();
-        if(data.button_pressed == 0) {
-          setTimeout(jsPsych.resumeExperiment, 1000);
-        } else {
-          setTimeout(jsPsych.resumeExperiment, 500);
-        }
-       }
-    }
-
     var procedure = {
       timeline: [
           {
             type: 'html-button-response',
-            stimulus: function() { return "<p>Pick left or right. <br>";
+            stimulus: function() { return "<h2>Pick left or right</h2>";
             },
             choices: ['Error', 'Correct'],
             on_finish: function(data){
@@ -59,7 +44,7 @@
           },
           {
               type: 'html-keyboard-response',
-              stimulus: function() { return "<p>" + jsPsych.timelineVariable('target_words', true) + "</p>";
+              stimulus: function() { return "<h2>" + jsPsych.timelineVariable('target_words', true) + "</h2>";
               },
               choices: jsPsych.NO_KEYS,
               trial_duration: 2500
@@ -75,7 +60,7 @@
 
 	var endscreen = {
 		type: 'html-button-response',
-		stimulus: "<p>End of experiment</p>",
+		stimulus: "<h2>End of experiment</h2>",
 		choices: ['Finish']
 	};
 
