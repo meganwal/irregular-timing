@@ -30,7 +30,7 @@
       timeline: [
           {
             type: 'html-button-response',
-            stimulus: function() { return "<h2>Pick left or right</h2>";
+            stimulus: function() { return "<h2>" + jsPsych.timelineVariable('target_words', true) + "<br><br></h2>";
             },
             choices: ['Error', 'Correct'],
             on_finish: function(data){
