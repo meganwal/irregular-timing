@@ -1,17 +1,17 @@
-source_file,age,utterance,overreg_past,overreg_plural
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020521.xml,904,I gotta poo I gots got,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020604.xml,917.5,I broked broke it,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020611.xml,924.5,it's xxx it has gots got an ow a boo_boo,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020701.xml,945,tmores smores,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/021001.xml,1036.5,sleept slept,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030904.xml,1374.25,skakies snakies and worms,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030904.xml,1374.25,uh tiny teef teeth,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030925.xml,1395.25,see de the little dings things right dere there you hammer dem them down,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030925.xml,1395.25,and after dat that he goed went dose those some caves and de the Aladar and de the jungle and den then they climbed in dere there and after dat that after dat that it closed,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031009.xml,1409.75,I felled fell on a carpet,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031023.xml,1423.75,it has teef teeth,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031023.xml,1423.75,it has really big teef teeth,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031128.xml,1459.25,I gots got one two three four,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/040611.xml,1655,and and it stunged stung me right here,TRUE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/040611.xml,1655,uma there was someone who also gots got bit by a spider then they both turned into something um who um who shoots out something,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Roman/040720.xml,1694.5,um number two um um he bendeded bent a camp,TRUE,FALSE
+source_file,age,utterance,overreg_past,overreg_plural,elan_coded
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020521.xml,904,I gotta poo I gots got,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020604.xml,917.5,I broked broke it,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020611.xml,924.5,it's xxx it has gots got an ow a boo_boo,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/020701.xml,945,tmores smores,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/021001.xml,1036.5,sleept slept,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030904.xml,1374.25,skakies snakies and worms,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030904.xml,1374.25,uh tiny teef teeth,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030925.xml,1395.25,see de the little dings things right dere there you hammer dem them down,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/030925.xml,1395.25,and after dat that he goed went dose those some caves and de the Aladar and de the jungle and den then they climbed in dere there and after dat that after dat that it closed,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031009.xml,1409.75,I felled fell on a carpet,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031023.xml,1423.75,it has teef teeth,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031023.xml,1423.75,it has really big teef teeth,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/031128.xml,1459.25,I gots got one two three four,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/040611.xml,1655,and and it stunged stung me right here,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/040611.xml,1655,uma there was someone who also gots got bit by a spider then they both turned into something um who um who shoots out something,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Roman/040720.xml,1694.5,um number two um um he bendeded bent a camp,TRUE,FALSE,TRUE
