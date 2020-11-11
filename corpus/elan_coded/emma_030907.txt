@@ -1,0 +1,8 @@
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
+1739600	1744350	error	
+1745020	1748450		response
+1856480	1858200	error	
+1857900	1858740		response
+1895690	1896900	error	
+1897310	1898070		response
+

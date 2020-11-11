@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">945,821</Object>
+        <Object class="java.awt.Dimension">945,820</Object>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>0</Int>
@@ -16,6 +16,14 @@
     <pref key="SelectionEndTime">
         <Long>991290</Long>
     </pref>
+    <pref key="ExportTabDialog.SelectTiersMode">
+        <String>Tier</String>
+    </pref>
+    <prefList key="ExportTabDialog.TierOrder">
+        <String>default</String>
+        <String>child_error_utterance</String>
+        <String>parent_error_response</String>
+    </prefList>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
@@ -51,6 +59,10 @@
             <Int>75</Int>
         </pref>
     </prefGroup>
+    <prefList key="ExportTabDialog.selectedTiers">
+        <String>child_error_utterance</String>
+        <String>parent_error_response</String>
+    </prefList>
     <prefList key="CommentViewer.Columns.Order">
         <String>Start Time</String>
         <String>End Time</String>
@@ -82,7 +94,7 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>985957</Long>
+        <Long>985950</Long>
     </pref>
     <pref key="MediaTime">
         <Long>991290</Long>
@@ -109,5 +121,8 @@
     <prefList key="CommentViewer.Columns.Hidden">
         <String>Sender</String>
         <String>Recipient</String>
+    </prefList>
+    <prefList key="ExportTabDialog.HiddenTiers">
+        <String>default</String>
     </prefList>
 </preferences>

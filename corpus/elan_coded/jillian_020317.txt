@@ -1,0 +1,12 @@
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
+452800	454830	error	
+454620	456300		response
+456330	460620	error	
+460920	461740		response
+853760	855070	error	
+854995	855785		response
+859760	861060	error	
+861195	861970		response
+1808670	1816820	error	
+1816930	1817700		response
+

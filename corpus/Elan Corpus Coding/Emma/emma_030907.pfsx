@@ -16,6 +16,14 @@
     <pref key="SelectionEndTime">
         <Long>1896890</Long>
     </pref>
+    <pref key="ExportTabDialog.SelectTiersMode">
+        <String>Tier</String>
+    </pref>
+    <prefList key="ExportTabDialog.TierOrder">
+        <String>default</String>
+        <String>child_error_utterance</String>
+        <String>parent_error_response</String>
+    </prefList>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
@@ -51,6 +59,10 @@
             <Int>75</Int>
         </pref>
     </prefGroup>
+    <prefList key="ExportTabDialog.selectedTiers">
+        <String>child_error_utterance</String>
+        <String>parent_error_response</String>
+    </prefList>
     <prefList key="CommentViewer.Columns.Order">
         <String>Start Time</String>
         <String>End Time</String>
@@ -67,7 +79,7 @@
         <String>AAM-LR Phone level audio segmentation</String>
     </pref>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">693,23</Object>
+        <Object class="java.awt.Point">563,23</Object>
     </pref>
     <pref key="SelectionBeginTime">
         <Long>1896490</Long>
@@ -79,7 +91,7 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>1894650</Long>
+        <Long>1890280</Long>
     </pref>
     <pref key="MediaTime">
         <Long>1898200</Long>
@@ -106,5 +118,8 @@
     <prefList key="CommentViewer.Columns.Hidden">
         <String>Sender</String>
         <String>Recipient</String>
+    </prefList>
+    <prefList key="ExportTabDialog.HiddenTiers">
+        <String>default</String>
     </prefList>
 </preferences>

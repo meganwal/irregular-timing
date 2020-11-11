@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">785,822</Object>
+        <Object class="java.awt.Dimension">1196,820</Object>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>7</Int>
@@ -16,6 +16,14 @@
     <pref key="SelectionEndTime">
         <Long>640070</Long>
     </pref>
+    <pref key="ExportTabDialog.SelectTiersMode">
+        <String>Tier</String>
+    </pref>
+    <prefList key="ExportTabDialog.TierOrder">
+        <String>default</String>
+        <String>child_error_utterance</String>
+        <String>parent_error_response</String>
+    </prefList>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
@@ -51,6 +59,10 @@
             <Int>75</Int>
         </pref>
     </prefGroup>
+    <prefList key="ExportTabDialog.selectedTiers">
+        <String>child_error_utterance</String>
+        <String>parent_error_response</String>
+    </prefList>
     <prefList key="CommentViewer.Columns.Order">
         <String>Start Time</String>
         <String>End Time</String>
@@ -70,7 +82,7 @@
         <Float>0.85</Float>
     </pref>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">655,23</Object>
+        <Object class="java.awt.Point">37,23</Object>
     </pref>
     <pref key="SelectionBeginTime">
         <Long>638630</Long>
@@ -88,7 +100,7 @@
         <Long>636140</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>640070</Long>
+        <Long>642380</Long>
     </pref>
     <prefGroup key="TierColors">
         <pref key="parent_error_response">
@@ -112,5 +124,8 @@
     <prefList key="CommentViewer.Columns.Hidden">
         <String>Sender</String>
         <String>Recipient</String>
+    </prefList>
+    <prefList key="ExportTabDialog.HiddenTiers">
+        <String>default</String>
     </prefList>
 </preferences>

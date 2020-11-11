@@ -1,0 +1,6 @@
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
+276620	282610	error	
+282680	283520		response
+1190690	1195280	error	
+1193200	1194210		response
+
