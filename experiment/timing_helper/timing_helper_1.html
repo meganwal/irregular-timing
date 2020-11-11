@@ -36,9 +36,9 @@
             on_finish: function(data){
               jsPsych.pauseExperiment();
               if(data.button_pressed == 0) {
-                setTimeout(jsPsych.resumeExperiment, 1000);
+                setTimeout(jsPsych.resumeExperiment, 2000);
               } else {
-                setTimeout(jsPsych.resumeExperiment, 500);
+                setTimeout(jsPsych.resumeExperiment, 0);
               }
              }
           },
