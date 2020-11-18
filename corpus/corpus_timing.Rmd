@@ -17,6 +17,7 @@ library(here)
 library(ggthemes)
 library(glue)
 library(janitor)
+library(fuzzyjoin)
 
 theme_set(theme_few(base_size = 12))
 
@@ -58,7 +59,7 @@ process_errors <- function(corpus) {
   }
   
   child_errors %>%
-    select(source_file, age, utterance, start_time, response_time) %>%
+    select(source_file, age, utterance, responder, start_time, response_time) %>%
     mutate(overreg_past = "", overreg_plural = "",
            start_time = start_time / 60) %>%
     rename(start_time_minutes = start_time) %>%
@@ -142,17 +143,23 @@ ggplot(timed_errors, aes(x = response_time)) +
 
 ```{r control_utts, eval = FALSE}
 make_control_utts <- function(errors_df) {
-  corpus <- pull(errors_df, corpus) %>% unique()
+  corpora <- pull(errors_df, corpus) %>% unique()
  
-  utts <- read_csv(here(glue("data/{corpus}_utterance_data.csv"))) %>%
-    mutate(error = as.logical(error)) %>%
-    filter(!error, speaker == "CHI", responder != "CHI") %>%
-    mutate(length = str_count(utterance, " ") + 1) %>%
-    group_by(source_file) %>%
-    mutate(age = process_age(age)) %>%
-    mutate(age_months = floor(age/30.5)) %>%
-    group_by(age_months, plural, past_tense, length) %>%
-    nest()
+  possible_control_utts <- function(corpus) {
+    read_csv(here(glue("corpus/data/{corpus}_utterance_data.csv"))) %>%
+      mutate(error = as.logical(error)) %>%
+      filter(!error, speaker == "CHI", responder != "CHI") %>%
+      mutate(length = str_count(utterance, " ") + 1) %>%
+      filter(length >= 1) %>%
+      group_by(source_file) %>%
+      mutate(age = process_age(age)) %>%
+      mutate(age_months = floor(age/30.5)) %>%
+      group_by(age_months, length) %>%
+      nest() %>%
+      mutate(corpus = corpus)
+  }
+  
+  utts <- map_dfr(corpora, possible_control_utts)
 
   errors <- errors_df %>%
     mutate(age_months = floor(age/30.5)) %>%
@@ -160,11 +167,16 @@ make_control_utts <- function(errors_df) {
            "plural" = "overreg_plural") %>%
     mutate_at(vars(past_tense, plural), as.character) %>%
     fuzzy_left_join(utts, 
-                    by = c("age_months", "length", "plural", "past_tense"),
-                    match_fun = c(~(abs(.x -.y)), ~(abs(.x -.y)),
-                                  ~(as.numeric(.x==.y)), ~(as.numeric(.x==.y)))
-    
-   
+                    by = c("corpus", "responder", "age_months", "length"),
+                    match_fun = list("corpus" = ~.x == .y,
+                                     "responder" = ~.x == .y,
+                                     "age_months" = ~abs(.x -.y) <= 4,
+                                     "length" = ~abs(.x -.y) <= 4)) %>%
+    mutate(diff = abs(age_months.x - age_months.y) + 
+             abs(length.x - length.y)) %>%
+    group_by(corpus.x, age_months.x, responder.x, utterance, past_tense, plural, length.x,
+             response_time) %>%
+    filter(diff == min(diff)) 
 }
 ```
 
