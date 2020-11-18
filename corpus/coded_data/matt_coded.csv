@@ -1,10 +1,10 @@
-source_file,age,utterance,overreg_past,overreg_plural,elan_coded
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/020510.xml,893,okay I founding the little mans,FALSE,TRUE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/020707.xml,951,he um fly flying his he flyed his kite and it fell on the cow,TRUE,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/020707.xml,951,it flyed,TRUE,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040405.xml,1588,he stucked his hand in it he stucked his hand in it,TRUE,FALSE,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040718.xml,1692.5,I decided to in the crunchy socks,FALSE,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,so it's ate the whole log cabin too,FALSE,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,poor hat um Abraham_Lincoln's ate house,FALSE,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,I just wanna write Abraham_L ate house,FALSE,FALSE,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,aten house,FALSE,FALSE,FALSE
+source_file,age,utterance,responder,overreg_past,overreg_plural,elan_coded
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/020510.xml,893,okay I founding the little mans,MOT,FALSE,TRUE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/020707.xml,951,he um fly flying his he flyed his kite and it fell on the cow,MOT,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/020707.xml,951,it flyed,MOT,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040405.xml,1588,he stucked his hand in it he stucked his hand in it,MOT,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040718.xml,1692.5,I decided to in the crunchy socks,INV,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,so it's ate the whole log cabin too,MOT,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,poor hat um Abraham_Lincoln's ate house,MOT,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,I just wanna write Abraham_L ate house,MOT,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Matt/040921.xml,1756.5,aten house,MOT,FALSE,FALSE,FALSE
