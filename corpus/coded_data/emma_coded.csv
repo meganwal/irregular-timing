@@ -1,20 +1,20 @@
-source_file,age,utterance,overreg_past,overreg_plural,start_time_minutes,elan_coded
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/021116.xml,1082,yes and the roar was so scared the flower goed away,TRUE,FALSE,8.21185,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/021116.xml,1082,she just waked up,TRUE,FALSE,18.80676667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/021116.xml,1082,she put it on it and the baby falled over,TRUE,FALSE,19.79703333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030003.xml,1098.75,I just goed past you,TRUE,FALSE,10.59941667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030120.xml,1146.25,that my grandpa drawed that and grandpa drawed that,TRUE,FALSE,1.425083333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030624.xml,1302.75,everyone begans,FALSE,FALSE,31.44505,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030721.xml,1330.25,he just r runned an gave it to me,TRUE,FALSE,22.88621667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030907.xml,1377.25,yeah I maded it and I have I had kayak clothes on,TRUE,FALSE,28.97626667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030907.xml,1377.25,I just buyed chocolate milk,TRUE,FALSE,30.91843333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030907.xml,1377.25,I drinked it all,TRUE,FALSE,31.56906667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,and she even bringed a slide,TRUE,FALSE,0.196683333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,no she bringed all these aminals but she didn't bring this,TRUE,FALSE,1.775016667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,Jessica only bringed two o these,TRUE,FALSE,4.885966667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,we gotted,TRUE,FALSE,9.271383333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040321.xml,1573.5,the dog waked you up,TRUE,FALSE,28.38351667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040321.xml,1573.5,someone throwed me forty four times on the ground,TRUE,FALSE,30.01148333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040418.xml,1601,I heard that we need chocolate chips and I bringed them over,TRUE,FALSE,7.745383333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040418.xml,1601,it's from Hans and Tamara sended it to us,TRUE,FALSE,18.83481667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040804.xml,1709,I know where we hided it,TRUE,FALSE,30.34955,TRUE
+source_file,age,utterance,responder,overreg_past,overreg_plural,start_time_minutes,elan_coded
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/021116.xml,1082,yes and the roar was so scared the flower goed away,FAT,TRUE,FALSE,8.21185,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/021116.xml,1082,she just waked up,FAT,TRUE,FALSE,18.80676667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/021116.xml,1082,she put it on it and the baby falled over,FAT,TRUE,FALSE,19.79703333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030003.xml,1098.75,I just goed past you,FAT,TRUE,FALSE,10.59941667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030120.xml,1146.25,that my grandpa drawed that and grandpa drawed that,JES,TRUE,FALSE,1.425083333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030624.xml,1302.75,everyone begans,JES,FALSE,FALSE,31.44505,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030721.xml,1330.25,he just r runned an gave it to me,JES,TRUE,FALSE,22.88621667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030907.xml,1377.25,yeah I maded it and I have I had kayak clothes on,FAT,TRUE,FALSE,28.97626667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030907.xml,1377.25,I just buyed chocolate milk,JES,TRUE,FALSE,30.91843333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/030907.xml,1377.25,I drinked it all,JES,TRUE,FALSE,31.56906667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,and she even bringed a slide,LAU,TRUE,FALSE,0.196683333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,no she bringed all these aminals but she didn't bring this,LAU,TRUE,FALSE,1.775016667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,Jessica only bringed two o these,LAU,TRUE,FALSE,4.885966667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040300.xml,1552.5,we gotted,LAU,TRUE,FALSE,9.271383333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040321.xml,1573.5,the dog waked you up,LAU,TRUE,FALSE,28.38351667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040321.xml,1573.5,someone throwed me forty four times on the ground,LAU,TRUE,FALSE,30.01148333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040418.xml,1601,I heard that we need chocolate chips and I bringed them over,LAU,TRUE,FALSE,7.745383333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040418.xml,1601,it's from Hans and Tamara sended it to us,LAU,TRUE,FALSE,18.83481667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Emma/040804.xml,1709,I know where we hided it,LAU,TRUE,FALSE,30.34955,TRUE
