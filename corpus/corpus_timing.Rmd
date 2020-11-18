@@ -67,24 +67,8 @@ process_errors <- function(corpus) {
 
 ```
 
-```{r braunwald, warning = FALSE}
+```{r process-errors, warning = FALSE}
 process_errors("braunwald")
-```
-
-```{r read-errors}
-read_errors <- function(corpus) {
-  coded <- read_csv(here(glue("corpus/coded_data/{corpus}_coded.csv")))
-  coded <- coded %>% 
-    filter(overreg_past == TRUE | overreg_plural == TRUE)
-  return(coded)
-}
-```
-
-```{r braunwald-errors}
-braunwald <- read_errors("braunwald")
-```
-
-```{r process-errors}
 process_errors("sachs")
 process_errors("ben")
 process_errors("emily")
@@ -94,8 +78,14 @@ process_errors("matt")
 process_errors("roman")
 ```
 
+```{r read-errors}
+read_errors <- function(corpus) {
+  coded <- read_csv(here(glue("corpus/coded_data/{corpus}_coded.csv")))
+  coded <- coded %>% 
+    filter(overreg_past == TRUE | overreg_plural == TRUE)
+  return(coded)
+}
 
-```{r read-others-errors}
 corpus_list <- c("braunwald", "sachs", "ben", "emily", "emma", 
              "jillian", "matt", "roman")
 
@@ -103,14 +93,6 @@ corpus_errors <- map_dfr(corpus_list, read_errors, .id = "corpus") %>%
   mutate(corpus = factor(corpus, labels = corpus_list),
          age_years = age / 365.25,
          length = str_count(utterance, " ") + 1)
-
-# sachs <- read_errors("sachs") #8 ORs
-# ben <- read_errors("ben") #3 ORs
-# emily <- read_errors("emily") #31 ORs
-# emma <- read_errors("emma") #18 ORs
-# jillian <- read_errors("jillian") #34 ORs
-# matt <- read_errors("matt") #4 ORs
-# roman <- read_errors("roman") #6 ORs
 ```
 
 ```{r read-elan}
@@ -158,29 +140,7 @@ ggplot(timed_errors, aes(x = response_time)) +
   geom_histogram()
 ```
 
-
-```{r nelson, eval = FALSE, show = FALSE}
-process_errors("nelson")
-#found no errors
-
-nelson_utts <- read_csv(here(glue("data/nelson_utterance_data.csv"))) %>%
-  mutate(error = as.logical(error),
-         response_time = as.numeric(response_time)) %>%
-  group_by(source_file) %>%
-  mutate(age = process_age(age)) 
-
-nerrors <- nelson_utts %>% filter(error == TRUE)
-
-nelson_child_data <- nelson_utts %>%
-  filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
-nelson_child_errors <- nelson_child_data %>%
-    filter(error)
-```
-
 ```{r control_utts, eval = FALSE}
-
-
-
 make_control_utts <- function(errors_df) {
   corpus <- pull(errors_df, corpus) %>% unique()
  
@@ -211,4 +171,22 @@ make_control_utts <- function(errors_df) {
 ```{r response-times, eval = FALSE}
 ggplot(child_data, aes(x = response_time, color = error))  +
   geom_density()
+```
+
+```{r nelson, eval = FALSE, show = FALSE}
+process_errors("nelson")
+#found no errors
+
+nelson_utts <- read_csv(here(glue("data/nelson_utterance_data.csv"))) %>%
+  mutate(error = as.logical(error),
+         response_time = as.numeric(response_time)) %>%
+  group_by(source_file) %>%
+  mutate(age = process_age(age)) 
+
+nerrors <- nelson_utts %>% filter(error == TRUE)
+
+nelson_child_data <- nelson_utts %>%
+  filter(speaker == "CHI" & responder != "CHI" & (past_tense | plural ))
+nelson_child_errors <- nelson_child_data %>%
+    filter(error)
 ```
