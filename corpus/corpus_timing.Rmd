@@ -133,7 +133,8 @@ timed_errors <- fixed_file_corpus_errors %>%
   filter(elan_coded) %>%
   select(-response_time) %>%
   left_join(elan_response_times, by = c("corpus", "file", "utt_num")) %>%
-  bind_rows(filter(fixed_file_corpus_errors, is.na(elan_coded)))
+  bind_rows(filter(fixed_file_corpus_errors, is.na(elan_coded))) %>%
+  filter(responder != "SIS")
 ```
 
 ```{r}
