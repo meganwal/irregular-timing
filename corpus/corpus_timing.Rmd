@@ -142,11 +142,13 @@ ggplot(timed_errors, aes(x = response_time)) +
 ```
 
 ```{r control_utts, eval = FALSE}
-make_control_utts <- function(errors_df) {
+make_control_utts <- function(errors_df, n = 3) {
   corpora <- pull(errors_df, corpus) %>% unique()
  
   possible_control_utts <- function(corpus) {
     read_csv(here(glue("corpus/data/{corpus}_utterance_data.csv"))) %>%
+      mutate(response_time = as.numeric(response_time),
+             utterance_time = as.numeric(utterance_time)) %>%
       mutate(error = as.logical(error)) %>%
       filter(!error, speaker == "CHI", responder != "CHI") %>%
       mutate(length = str_count(utterance, " ") + 1) %>%
@@ -154,7 +156,7 @@ make_control_utts <- function(errors_df) {
       group_by(source_file) %>%
       mutate(age = process_age(age)) %>%
       mutate(age_months = floor(age/30.5)) %>%
-      group_by(age_months, length) %>%
+      group_by(responder, age_months, length) %>%
       nest() %>%
       mutate(corpus = corpus)
   }
@@ -176,8 +178,22 @@ make_control_utts <- function(errors_df) {
              abs(length.x - length.y)) %>%
     group_by(corpus.x, age_months.x, responder.x, utterance, past_tense, plural, length.x,
              response_time) %>%
-    filter(diff == min(diff)) 
-}
+    filter(diff == min(diff)) %>%
+    unnest() 
+  
+}  
+```
+
+```{r}
+errors %>%
+    group_by(corpus.x, file, age, utterance) %>%
+  sample_n(2)
+
+```
+
+
+```{r}
+controls <- make_control_utts(timed_errors, 3)
 ```
 
 ```{r response-times, eval = FALSE}
