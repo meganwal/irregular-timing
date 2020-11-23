@@ -1,45 +1,45 @@
-source_file,age,utterance,responder,overreg_past,overreg_plural,start_time_minutes,elan_coded
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020101.xml,762,he falled,JEN,TRUE,FALSE,14.48725,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020101.xml,762,he falled,MOT,TRUE,FALSE,16.3885,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020108.xml,769,I taked a shower,MOT,TRUE,FALSE,13.21043333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020108.xml,769,they're takin bathses,MOT,FALSE,FALSE,22.72566667,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020117.xml,778,I swimmed in the bathtub,MOT,TRUE,FALSE,14.37141667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020117.xml,778,I sayed nothin,JEN,TRUE,FALSE,27.2636,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020129.xml,790,they sayed hi,JEN,TRUE,FALSE,16.90391667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020129.xml,790,I maked a a coat,MOT,TRUE,FALSE,25.4876,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020206.xml,797.5,he taked his beard off,MOT,TRUE,FALSE,16.791,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020206.xml,797.5,I drawed xxx beach,MOT,TRUE,FALSE,25.54018333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,I fli in in the in Portugal,MOT,FALSE,FALSE,2.49415,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,he drinked milk,JEN,TRUE,FALSE,7.54155,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,his mommy his mommy goed to work,JEN,TRUE,FALSE,7.60635,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,I drawed the sun,JEN,TRUE,FALSE,14.23348333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,I drawed the sun,JEN,TRUE,FALSE,14.30026667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,my cousins maked me a castle and I played with it,JEN,TRUE,FALSE,30.12656667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020325.xml,847,I gots to pick it up,CAT,FALSE,FALSE,4.149366667,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020325.xml,847,I singed a song to the dinosaurs and then they were sleeping,CAT,TRUE,FALSE,4.6179,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020325.xml,847,and I doed that yester when I goed to school,JEN,TRUE,FALSE,19.83948333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020409.xml,861.5,oh I loves loves your hair,CAT,FALSE,FALSE,26.10726667,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020414.xml,866.5,yeah I'm going to buy all your milks ta,MOT,FALSE,FALSE,5.4889,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020414.xml,866.5,sip your milks on this,MOT,FALSE,FALSE,6.77555,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020414.xml,866.5,somebody drawed that picture,MOT,TRUE,FALSE,15.63918333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020421.xml,873.5,he's going to broken his arm if he,MOT,FALSE,FALSE,15.82573333,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020421.xml,873.5,drawed Jessie the cow,CAT,TRUE,FALSE,27.57793333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020428.xml,880.5,I baked you the milk and I maked you a burger,MOT,TRUE,FALSE,13.07145,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020507.xml,890,did you got my food,MOT,FALSE,FALSE,22.51096667,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020507.xml,890,well I throwed the giant away,CAT,TRUE,FALSE,28.20293333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020521.xml,904,we getted a pixies,CAT,TRUE,FALSE,19.3605,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020521.xml,904,I getted a pixies and a candy,CAT,TRUE,FALSE,19.43641667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020526.xml,909,drinked water and they,MOT,TRUE,FALSE,8.640166667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020526.xml,909,we pickeded the doggie up and,CAT,FALSE,FALSE,29.6093,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,when he camed,CAT,TRUE,FALSE,1.445566667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,flied around the dinosaurs,CAT,TRUE,FALSE,3.8958,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,and then I hided,CAT,TRUE,FALSE,4.13465,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,only all my friends camed,CAT,TRUE,FALSE,8.065216667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,and then all the mommy was and then the Jillysaurs camed,CAT,TRUE,FALSE,8.8553,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,then you growed up now to be the daddy,CAT,TRUE,FALSE,21.04918333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,they're growed up,CAT,TRUE,FALSE,21.49611667,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,you growed up and then that's the daddy,CAT,TRUE,FALSE,30.19975,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020707.xml,951,he was cold yeah he was he's a Tyrannosauruses,INV,FALSE,FALSE,18.53898333,FALSE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020707.xml,951,he went home and ated some trees that were brokened,INV,TRUE,FALSE,18.67058333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020707.xml,951,he falled into this river,INV,TRUE,FALSE,18.89198333,TRUE
-/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020916.xml,1021,they doed her maked her do her chores,MOT,TRUE,FALSE,3.276566667,TRUE
+source_file,age,utterance,responder,response,overreg_past,overreg_plural,start_time_minutes,elan_coded
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020101.xml,762,he falled,JEN,he falled,TRUE,FALSE,14.48725,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020101.xml,762,he falled,MOT,so mommy can't xxx the couch,TRUE,FALSE,16.3885,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020108.xml,769,I taked a shower,MOT,in the do you remember in the what in the sprinkler,TRUE,FALSE,13.21043333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020108.xml,769,they're takin bathses,MOT,oh in in little buckets huh,FALSE,FALSE,22.72566667,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020117.xml,778,I swimmed in the bathtub,MOT,and who who do you pretend to be when you're in the bathtub,TRUE,FALSE,14.37141667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020117.xml,778,I sayed nothin,JEN,you said nothing,TRUE,FALSE,27.2636,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020129.xml,790,they sayed hi,JEN,they said hi,TRUE,FALSE,16.90391667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020129.xml,790,I maked a a coat,MOT,it's cold,TRUE,FALSE,25.4876,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020206.xml,797.5,he taked his beard off,MOT,he did,TRUE,FALSE,16.791,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020206.xml,797.5,I drawed xxx beach,MOT,you drawed the beach,TRUE,FALSE,25.54018333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,I fli in in the in Portugal,MOT,to Portugal but what were we in,FALSE,FALSE,2.49415,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,he drinked milk,JEN,oh he drinked milk,TRUE,FALSE,7.54155,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,his mommy his mommy goed to work,JEN,yeah,TRUE,FALSE,7.60635,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,I drawed the sun,JEN,you did,TRUE,FALSE,14.23348333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,I drawed the sun,JEN,very good,TRUE,FALSE,14.30026667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020317.xml,839,my cousins maked me a castle and I played with it,JEN,you did,TRUE,FALSE,30.12656667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020325.xml,847,I gots to pick it up,CAT,really,FALSE,FALSE,4.149366667,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020325.xml,847,I singed a song to the dinosaurs and then they were sleeping,CAT,really,TRUE,FALSE,4.6179,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020325.xml,847,and I doed that yester when I goed to school,JEN,can I see it,TRUE,FALSE,19.83948333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020409.xml,861.5,oh I loves loves your hair,CAT,oh thank you,FALSE,FALSE,26.10726667,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020414.xml,866.5,yeah I'm going to buy all your milks ta,MOT,great,FALSE,FALSE,5.4889,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020414.xml,866.5,sip your milks on this,MOT,oh you know what this is for,FALSE,FALSE,6.77555,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020414.xml,866.5,somebody drawed that picture,MOT,somebody did draw that picture,TRUE,FALSE,15.63918333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020421.xml,873.5,he's going to broken his arm if he,MOT,he's gonna have a broken arm,FALSE,FALSE,15.82573333,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020421.xml,873.5,drawed Jessie the cow,CAT,very good,TRUE,FALSE,27.57793333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020428.xml,880.5,I baked you the milk and I maked you a burger,MOT,thanks,TRUE,FALSE,13.07145,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020507.xml,890,did you got my food,MOT,I have a shake sweetie,FALSE,FALSE,22.51096667,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020507.xml,890,well I throwed the giant away,CAT,okay but next time were gonna just pretend to throw him okay,TRUE,FALSE,28.20293333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020521.xml,904,we getted a pixies,CAT,and what did you get,TRUE,FALSE,19.3605,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020521.xml,904,I getted a pixies and a candy,CAT,you got candy right,TRUE,FALSE,19.43641667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020526.xml,909,drinked water and they,MOT,when they were very tired they usually,TRUE,FALSE,8.640166667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020526.xml,909,we pickeded the doggie up and,CAT,we picked the doggie up,FALSE,FALSE,29.6093,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,when he camed,CAT,that's a great story,TRUE,FALSE,1.445566667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,flied around the dinosaurs,CAT,he did,TRUE,FALSE,3.8958,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,and then I hided,CAT,oh no,TRUE,FALSE,4.13465,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,only all my friends camed,CAT,wow,TRUE,FALSE,8.065216667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,and then all the mommy was and then the Jillysaurs camed,CAT,the Jillysaurs came,TRUE,FALSE,8.8553,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,then you growed up now to be the daddy,CAT,yep and now I'm a daddy dinosaur,TRUE,FALSE,21.04918333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,they're growed up,CAT,they did,TRUE,FALSE,21.49611667,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020616.xml,929.5,you growed up and then that's the daddy,CAT,oh,TRUE,FALSE,30.19975,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020707.xml,951,he was cold yeah he was he's a Tyrannosauruses,INV,oh,FALSE,FALSE,18.53898333,FALSE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020707.xml,951,he went home and ated some trees that were brokened,INV,oh okay,TRUE,FALSE,18.67058333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020707.xml,951,he falled into this river,INV,he did,TRUE,FALSE,18.89198333,TRUE
+/content/drive/My Drive/childes/Eng-NA/Weist/Jillian/020916.xml,1021,they doed her maked her do her chores,MOT,they made her do her chores,TRUE,FALSE,3.276566667,TRUE

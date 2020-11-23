@@ -1,5 +1,5 @@
-source_file,age,utterance,responder,start_time_minutes,response_time,overreg_past,overreg_plural
-/content/drive/My Drive/childes/Eng-NA/Weist/Ben/020413.xml,865.5,it falled out,MOT,22.2559,0,,
-/content/drive/My Drive/childes/Eng-NA/Weist/Ben/020503.xml,886,all full upped,RYA,16.7633,0,,
-/content/drive/My Drive/childes/Eng-NA/Weist/Ben/020804.xml,978.5,it wa it was broked off,RYA,22.545266666666667,0,,
-/content/drive/My Drive/childes/Eng-NA/Weist/Ben/030221.xml,1177.75,he sleeped,MOT,20.00805,0,,
+source_file,age,utterance,responder,response,start_time_minutes,response_time,overreg_past,overreg_plural
+/content/drive/My Drive/childes/Eng-NA/Weist/Ben/020413.xml,865.5,it falled out,MOT,it fall out,22.2559,0,,
+/content/drive/My Drive/childes/Eng-NA/Weist/Ben/020503.xml,886,all full upped,RYA,what did you find,16.7633,0,,
+/content/drive/My Drive/childes/Eng-NA/Weist/Ben/020804.xml,978.5,it wa it was broked off,RYA,it was broked off,22.545266666666667,0,,
+/content/drive/My Drive/childes/Eng-NA/Weist/Ben/030221.xml,1177.75,he sleeped,MOT,and then what,20.00805,0,,

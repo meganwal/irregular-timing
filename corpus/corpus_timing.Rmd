@@ -59,7 +59,7 @@ process_errors <- function(corpus) {
   }
   
   child_errors %>%
-    select(source_file, age, utterance, responder, start_time, response_time) %>%
+    select(source_file, age, utterance, responder, response, start_time, response_time) %>%
     mutate(overreg_past = "", overreg_plural = "",
            start_time = start_time / 60) %>%
     rename(start_time_minutes = start_time) %>%
@@ -142,8 +142,8 @@ ggplot(timed_errors, aes(x = response_time)) +
   geom_histogram()
 ```
 
-```{r control_utts, eval = FALSE}
-make_control_utts <- function(errors_df, n = 3) {
+```{r make-control-utts}
+make_control_utts <- function(errors_df) {
   corpora <- pull(errors_df, corpus) %>% unique()
  
   possible_control_utts <- function(corpus) {
@@ -173,28 +173,96 @@ make_control_utts <- function(errors_df, n = 3) {
                     by = c("corpus", "responder", "age_months", "length"),
                     match_fun = list("corpus" = ~.x == .y,
                                      "responder" = ~.x == .y,
-                                     "age_months" = ~abs(.x -.y) <= 4,
-                                     "length" = ~abs(.x -.y) <= 4)) %>%
+                                     "age_months" = ~abs(.x -.y) <= 10,
+                                     "length" = ~abs(.x -.y) <= 10)) %>%
     mutate(diff = abs(age_months.x - age_months.y) + 
              abs(length.x - length.y)) %>%
     group_by(corpus.x, age_months.x, responder.x, utterance, past_tense, plural, length.x,
              response_time) %>%
-    filter(diff == min(diff)) %>%
-    unnest() 
-  
+    unnest() %>%
+    mutate(start_time = start_time / 60) %>%
+    rename(corpus = corpus.x,
+           speaker = speaker,
+           responder = responder.x,
+           experimental_file = file,
+           experimental_utterance = utterance,
+           experimental_response = response,
+           experimental_start_time_minutes = start_time_minutes,
+           experimental_age_years = age_years,
+           experimental_age_months = age_months.x,
+           experimental_length = length.x,
+           experimental_utt_num = utt_num,
+           experimental_response_time = response_time,
+           experimental_past_tense = past_tense,
+           experimental_plural = plural,
+           experimental_elan_coded = elan_coded,
+           control_file = source_file,
+           control_length = length.y,
+           control_age = age1,
+           control_age_months = age_months.y,
+           control_utterance = utterance1,
+           control_response = response1,
+           control_response_time = response_time1,
+           control_past_tense = past_tense1,
+           control_plural = plural1,
+           control_start_time_minutes = start_time) %>%
+  select(-error, -corpus.y, -overlap, -age, -responder.y, -utterance_time)
 }  
 ```
 
-```{r}
-errors %>%
-    group_by(corpus.x, file, age, utterance) %>%
-  sample_n(2)
-
+```{r iteratively-sample}
+iteratively_sample <- function(utts, diff_n) {
+  
+  print(diff_n)
+ 
+  sampled_utts <- utts %>%
+    group_by(corpus, experimental_file, experimental_age_months,
+             experimental_utterance) %>%
+    filter((diff - min(diff)) == diff_n) %>%
+    sample_frac(1) %>%
+    slice(1:remaining) %>%
+    mutate(n = n())
+  
+  complete_utts <- sampled_utts %>%
+    filter(n == remaining) %>%
+    select(-n) %>%
+    ungroup()
+  
+  partial_utts <- sampled_utts %>%
+    filter(n != remaining) %>%
+    mutate(now_remaining = remaining - n) %>%
+    ungroup()
+  
+  non_complete_utts <- utts %>%
+    anti_join(complete_utts %>%
+                select(corpus, experimental_file, experimental_utt_num),
+              by = c("corpus", "experimental_file", 
+                     "experimental_utt_num")) %>%
+    anti_join(partial_utts %>%
+                select(corpus, experimental_file, experimental_utt_num,
+                       control_response),
+              by = c("corpus", "experimental_file", 
+                     "experimental_utt_num", "control_response")) %>%
+    left_join(partial_utts %>% select(corpus, experimental_file, 
+                                      experimental_utt_num, now_remaining), 
+              by = c("corpus", "experimental_file", "experimental_utt_num")) %>%
+    mutate(remaining = if_else(is.na(now_remaining), 
+                               remaining, now_remaining)) %>%
+    select(-now_remaining)
+  
+  if(nrow(non_complete_utts) == 0)
+    return(bind_rows(complete_utts, partial_utts %>% select(-now_remaining)))
+  else
+    return(bind_rows(complete_utts, partial_utts %>% select(-now_remaining),
+                     iteratively_sample(non_complete_utts, diff_n + 1)))
+}
 ```
 
 
-```{r}
-controls <- make_control_utts(timed_errors, 3)
+```{r sample-controls}
+SAMPLE_N <- 3
+errors <- make_control_utts(timed_errors)
+controls <- iteratively_sample(errors %>% mutate(remaining = SAMPLE_N), 0)
 ```
 
 ```{r response-times, eval = FALSE}
