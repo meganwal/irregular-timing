@@ -63,12 +63,12 @@ process_errors <- function(corpus) {
     mutate(overreg_past = "", overreg_plural = "",
            start_time = start_time / 60) %>%
     rename(start_time_minutes = start_time) %>%
-    write_csv(here(glue("corpus/tocode_data/{corpus}_tocode.csv")))
+    write_csv(here(glue("corpus/tocode_data/experimental/{corpus}_tocode.csv")))
 }
 
 ```
 
-```{r process-errors, warning = FALSE}
+```{r process-errors, warning = FALSE, eval = FALSE}
 process_errors("braunwald")
 process_errors("sachs")
 process_errors("ben")
@@ -180,7 +180,9 @@ make_control_utts <- function(errors_df) {
     group_by(corpus.x, age_months.x, responder.x, utterance, past_tense, plural, length.x,
              response_time) %>%
     unnest() %>%
-    mutate(start_time = start_time / 60) %>%
+    mutate(start_time = start_time / 60,
+           source_file = str_split(source_file, "/") %>%  unlist() %>% last,
+                  source_file = sub(".xml", "", source_file)) %>%
     rename(corpus = corpus.x,
            speaker = speaker,
            responder = responder.x,
@@ -212,8 +214,6 @@ make_control_utts <- function(errors_df) {
 
 ```{r iteratively-sample}
 iteratively_sample <- function(utts, diff_n) {
-  
-  print(diff_n)
  
   sampled_utts <- utts %>%
     group_by(corpus, experimental_file, experimental_age_months,
@@ -262,7 +262,16 @@ iteratively_sample <- function(utts, diff_n) {
 ```{r sample-controls}
 SAMPLE_N <- 3
 errors <- make_control_utts(timed_errors)
-controls <- iteratively_sample(errors %>% mutate(remaining = SAMPLE_N), 0)
+
+controls <- iteratively_sample(errors %>% mutate(remaining = SAMPLE_N), 0) %>%
+  select(-n, -remaining)
+
+write_csv(controls, here("corpus/tocode_data/control/control_timing_full.csv"))
+
+write_csv(controls %>% 
+            select(corpus, control_file, control_utterance, control_response, 
+                   control_start_time_minutes),
+          here("corpus/tocode_data/control/control_timing_tocode.csv"))
 ```
 
 ```{r response-times, eval = FALSE}
