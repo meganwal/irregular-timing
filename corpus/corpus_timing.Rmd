@@ -41,6 +41,7 @@ process_age <- function(age) {
 
 process_errors <- function(corpus) {
   utts <- read_csv(here(glue("corpus/data/{corpus}_utterance_data.csv"))) %>%
+    filter(response_time != "s1 or s2 media info not available") %>%
     mutate(error = as.logical(error),
            response_time = as.numeric(response_time) * 1000) %>%
     group_by(source_file) %>%
@@ -56,6 +57,9 @@ process_errors <- function(corpus) {
   if(! "start_time" %in% names(child_errors)) {
     child_errors <- child_errors %>%
       mutate(start_time = 0)
+  } else {
+    child_errors <- child_errors %>%
+      mutate(start_time = as.numeric(start_time))
   }
   
   child_errors %>%
