@@ -1,72 +1,70 @@
-source_file,age,utterance,responder,response,overreg_past,overreg_plural,response_time
-/content/drive/My Drive/childes/Eng-NA/Braunwald/010720.xml,598.75,the xxx doggy gone do byebye,SIS,you think that er Swww is a is,FALSE,FALSE,34
-/content/drive/My Drive/childes/Eng-NA/Braunwald/010725.xml,603.75,I et,MOT,oh,FALSE,FALSE,569
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011008.xml,678.25,what you do,FAT,she loves xxx,FALSE,FALSE,534
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011019.xml,689.25,felled,MOT,you like to go to the beach,TRUE,FALSE,488
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011020.xml,690.25,go my hurt eye,FAT,did it hurt your eyes,FALSE,FALSE,0
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011027.xml,697.25,there my shoes,MOT,they're yours also,FALSE,FALSE,-35
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011103.xml,703.75,tiny when my baby come here,SIS,yes,FALSE,FALSE,-22
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011109.xml,709.75,on a Glock stairs,MOT,on Glock's stairs,FALSE,FALSE,-35
-/content/drive/My Drive/childes/Eng-NA/Braunwald/011126.xml,726.75,that broken,MOT,mhm hm,FALSE,FALSE,-349
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020023.xml,753.5,he Mummy Mummy,MOT,that's right,FALSE,FALSE,221
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020121.xml,782,I got I got milk in my eye,SIS,what's educated mean,FALSE,FALSE,-2787
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020128.xml,789,I had cold,MOT,do you,FALSE,FALSE,-12
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020200.xml,791.5,I've ate my dinner,FAT,good,FALSE,FALSE,502
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020212a.xml,803.5,that mean when Dee Jack went on trip on xxx on fire,MOT,when Deebee and Jack went on their trip to New_York,FALSE,FALSE,849
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020215.xml,806.5,I got choose Mickey_Mouse,MOT,mhm,FALSE,FALSE,-47
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020224.xml,815.5,I got fork,SIS,Laura's,FALSE,FALSE,-23
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020226.xml,817.5,I had no more pepper,MOT,okay,FALSE,FALSE,-116
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020227.xml,818.5,why you left,MOT,what sweetie,FALSE,FALSE,24
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300.xml,822,I had enough,MOT,it was a nice xxx breakfast,FALSE,FALSE,-487
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300.xml,822,I had nough,MOT,you had enough too,FALSE,FALSE,1263
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300.xml,822,I had,FAT,oh,FALSE,FALSE,-940
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,white cat was hurt Pwww,MOT,a white cat was hurting Pwww,FALSE,FALSE,406
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,Dwww said I Daniel,MOT,oh Dwww said you were Daniel,FALSE,FALSE,-35
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,here my new sandals,MOT,that's your new sandal,FALSE,FALSE,-429
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,a pears,MOT,xxx,FALSE,FALSE,35
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,I heared it,MOT,you didn't,TRUE,FALSE,-82
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,where where my squirrel go,MOT,I don't know,FALSE,FALSE,0
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,where my mouse go,MOT,I don't know,FALSE,FALSE,1034
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,when I have chicken,MOT,when did you have chicken,FALSE,FALSE,58
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020313.xml,835,Swww did byebye,FAT,Swww went byebye with Dwww,FALSE,FALSE,-46
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020323.xml,845,bird flewed at me,MOT,yes,TRUE,FALSE,-12
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020323.xml,845,I got a Mickey_Mouse,FAT,xxx,FALSE,FALSE,-1469
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020323.xml,845,I not cry,SIS,now Mummy I just ate half a muffin,FALSE,FALSE,3498
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020405.xml,857.5,you frozed it,SIS,uhhuh,TRUE,FALSE,523
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020406.xml,858.5,Daddy I got sore throat,FAT,no,FALSE,FALSE,-1091
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020526.xml,909,that allowed glass of apple juice,MOT,oh,FALSE,FALSE,NA
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020616.xml,929.5,I stopped to Swww a bump,FAT,Swww had a bump,FALSE,FALSE,325
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020621.xml,934.5,ah animals and fishes,MOT,animals and fishes,FALSE,TRUE,24
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020624.xml,937.5,put her arm put her tube in,MOT,put a tube in her ears,FALSE,FALSE,766
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020624.xml,937.5,and I weren't,MOT,you weren't,FALSE,FALSE,NA
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020710.xml,954,can I clap my hands this now,FAT,see whose who can do it the quietest,FALSE,FALSE,-1581
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020811.xml,985.5,did noone got a paper Mom,MOT,www,FALSE,FALSE,1219
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020811.xml,985.5,do you know who got paper,MOT,no,FALSE,FALSE,1309
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020811.xml,985.5,you dropped them milk,SIS,xxx,FALSE,FALSE,-2078
-/content/drive/My Drive/childes/Eng-NA/Braunwald/020819.xml,993.5,then his cars might be in the garage,MOT,maybe it is,FALSE,FALSE,0
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030125a.xml,1151.25,do you let Jwww lost Bun_Bun,SIS,nah I didn't lose it,FALSE,FALSE,35
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030125b.xml,1151.25,and that one gone,FAT,isn't that sad,FALSE,FALSE,81
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030311.xml,1198.25,just this month did a little bit bigger,MOT,to be how big,FALSE,FALSE,128
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030316a.xml,1203.25,and my baby's name was Elizabeth and Jwww's baby's name Rory,SIS,Laura,FALSE,FALSE,-1219
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030324.xml,1211.25,your voice has gone loud,MOT,is it,FALSE,FALSE,35
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528a.xml,1276.25,my toast is burned,MOT,uhuh,TRUE,FALSE,-11
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528b.xml,1276.25,but where they went,SIS,let me choose who's gonna to be in our family,FALSE,FALSE,70
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528b.xml,1276.25,I think we call this messy did I Mom,SIS,uhuh,FALSE,FALSE,-325
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528b.xml,1276.25,that what I wanted to tell you I forgot,FAT,yeah,FALSE,FALSE,-139
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528d.xml,1276.25,because I'm gonna show you how I made I how I maded my my treasure box right right Jwww,SIS,here,TRUE,FALSE,-1452
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528d.xml,1276.25,are you getting how you get pink,SIS,this is sort of maroon with pink,FALSE,FALSE,315
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030528d.xml,1276.25,are yours fingers getting dirty Jwww,SIS,xxx,FALSE,FALSE,-1893
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030702d.xml,1311.25,where did you left your socks,MOT,I left my socks in the bathroom,FALSE,FALSE,186
-/content/drive/My Drive/childes/Eng-NA/Braunwald/030702d.xml,1311.25,what did you eat lunch,MOT,pardon me,FALSE,FALSE,1204
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040307a.xml,1559.5,Tamsin and I was on tv,MOT,you were,FALSE,FALSE,244
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040307a.xml,1559.5,I just I did a little snivels,MOT,no,FALSE,FALSE,267
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040311c.xml,1563.5,I don't know how many years you've got married,SIS,about five years ago,FALSE,FALSE,-19
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040311c.xml,1563.5,I've got xxx,FRI,I wanna xxx same time as them,FALSE,FALSE,390
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040311c.xml,1563.5,I think we better share houses,SIS,houses,FALSE,FALSE,-754
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040711a.xml,1685.5,I meaned it from a book about school yesterday,MOT,and the frogs changed their skin,FALSE,FALSE,54
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040718d.xml,1692.5,he that you'd be mine I said this you,MOT,he told me ooh,FALSE,FALSE,-81
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040718d.xml,1692.5,he told ooh,MOT,eee,FALSE,FALSE,128
-/content/drive/My Drive/childes/Eng-NA/Braunwald/040718d.xml,1692.5,I got it and it was all breaked,MOT,it was all broken,TRUE,FALSE,314
-/content/drive/My Drive/childes/Eng-NA/Braunwald/041000.xml,1766,where have they took my xxx,GRA,www bring me some coffee,FALSE,FALSE,-771
-/content/drive/My Drive/childes/Eng-NA/Braunwald/051013.xml,2144.25,the tooth fairy would have came anyhow,FRI,did you did did you have a good tooth over,FALSE,FALSE,1138
-/content/drive/My Drive/childes/Eng-NA/Braunwald/070014.xml,2570.75,these two are pushed,MOT,yeah,FALSE,FALSE,-290
+source_file,age,utterance,responder,response,start_time_minutes,overreg_past,overreg_plural,elan_coded
+/content/drive/My Drive/childes/Eng-NA/Braunwald/010720.xml,598.75,the xxx doggy gone do byebye,SIS,you think that er Swww is a is,2.753,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/010725.xml,603.75,I et,MOT,oh,9.882333333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011008.xml,678.25,what you do,FAT,she loves xxx,3.847966667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011019.xml,689.25,felled,MOT,you like to go to the beach,6.50015,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011020.xml,690.25,go my hurt eye,FAT,did it hurt your eyes,4.6298,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011027.xml,697.25,there my shoes,MOT,they're yours also,22.27111667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011103.xml,703.75,tiny when my baby come here,SIS,yes,10.93998333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011109.xml,709.75,on a Glock stairs,MOT,on Glock's stairs,17.67985,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/011126.xml,726.75,that broken,MOT,mhm hm,2.08995,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020023.xml,753.5,he Mummy Mummy,MOT,that's right,0.348766667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020121.xml,782,I got I got milk in my eye,SIS,what's educated mean,1.217416667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020128.xml,789,I had cold,MOT,do you,8.773883333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020200.xml,791.5,I've ate my dinner,FAT,good,5.001,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020212a.xml,803.5,that mean when Dee Jack went on trip on xxx on fire,MOT,when Deebee and Jack went on their trip to New_York,5.830066667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020215.xml,806.5,I got choose Mickey_Mouse,MOT,mhm,3.68105,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020224.xml,815.5,I got fork,SIS,Laura's,1.702166667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020226.xml,817.5,I had no more pepper,MOT,okay,5.88855,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020227.xml,818.5,why you left,MOT,what sweetie,12.10363333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300.xml,822,I had enough,MOT,it was a nice xxx breakfast,13.03163333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300.xml,822,I had nough,MOT,you had enough too,13.06936667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300.xml,822,I had,FAT,oh,13.116,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,white cat was hurt Pwww,MOT,a white cat was hurting Pwww,0.4829,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,Dwww said I Daniel,MOT,oh Dwww said you were Daniel,6.233483333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,here my new sandals,MOT,that's your new sandal,11.45556667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,a pears,MOT,xxx,19.25916667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,I heared it,MOT,you didn't,24.54785,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,where where my squirrel go,MOT,I don't know,26.70003333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,where my mouse go,MOT,I don't know,26.76505,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020300a.xml,822,when I have chicken,MOT,when did you have chicken,29.72478333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020313.xml,835,Swww did byebye,FAT,Swww went byebye with Dwww,9.427516667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020323.xml,845,bird flewed at me,MOT,yes,2.671283333,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020323.xml,845,I got a Mickey_Mouse,FAT,xxx,4.16325,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020323.xml,845,I not cry,SIS,now Mummy I just ate half a muffin,16.27006667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020405.xml,857.5,you frozed it,SIS,uhhuh,7.6915,TRUE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020406.xml,858.5,Daddy I got sore throat,FAT,no,7.55795,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020616.xml,929.5,I stopped to Swww a bump,FAT,Swww had a bump,1.871183333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020621.xml,934.5,ah animals and fishes,MOT,animals and fishes,3.45275,FALSE,TRUE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020624.xml,937.5,put her arm put her tube in,MOT,put a tube in her ears,2.82205,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020710.xml,954,can I clap my hands this now,FAT,see whose who can do it the quietest,20.79171667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020811.xml,985.5,did noone got a paper Mom,MOT,www,11.16491667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020811.xml,985.5,do you know who got paper,MOT,no,11.28971667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020811.xml,985.5,you dropped them milk,SIS,xxx,13.194,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/020819.xml,993.5,then his cars might be in the garage,MOT,maybe it is,3.490266667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030125a.xml,1151.25,do you let Jwww lost Bun_Bun,SIS,nah I didn't lose it,11.9374,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030125b.xml,1151.25,and that one gone,FAT,isn't that sad,1.303983333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030311.xml,1198.25,just this month did a little bit bigger,MOT,to be how big,6.029033333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030316a.xml,1203.25,and my baby's name was Elizabeth and Jwww's baby's name Rory,SIS,Laura,0.47265,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030324.xml,1211.25,your voice has gone loud,MOT,is it,8.73735,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528a.xml,1276.25,my toast is burned,MOT,uhuh,3.219316667,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528b.xml,1276.25,but where they went,SIS,let me choose who's gonna to be in our family,5.567166667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528b.xml,1276.25,I think we call this messy did I Mom,SIS,uhuh,8.45625,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528b.xml,1276.25,that what I wanted to tell you I forgot,FAT,yeah,25.5211,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528d.xml,1276.25,because I'm gonna show you how I made I how I maded my my treasure box right right Jwww,SIS,here,36.416,TRUE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528d.xml,1276.25,are you getting how you get pink,SIS,this is sort of maroon with pink,44.29201667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030528d.xml,1276.25,are yours fingers getting dirty Jwww,SIS,xxx,44.78701667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030702d.xml,1311.25,where did you left your socks,MOT,I left my socks in the bathroom,6.6193,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/030702d.xml,1311.25,what did you eat lunch,MOT,pardon me,6.84065,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040307a.xml,1559.5,Tamsin and I was on tv,MOT,you were,0.344366667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040307a.xml,1559.5,I just I did a little snivels,MOT,no,10.22513333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040311c.xml,1563.5,I don't know how many years you've got married,SIS,about five years ago,1.9014,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040311c.xml,1563.5,I've got xxx,FRI,I wanna xxx same time as them,22.48928333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040311c.xml,1563.5,I think we better share houses,SIS,houses,25.84776667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040711a.xml,1685.5,I meaned it from a book about school yesterday,MOT,and the frogs changed their skin,7.716683333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040718d.xml,1692.5,he that you'd be mine I said this you,MOT,he told me ooh,2.815266667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040718d.xml,1692.5,he told ooh,MOT,eee,2.952666667,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/040718d.xml,1692.5,I got it and it was all breaked,MOT,it was all broken,4.017133333,TRUE,FALSE,TRUE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/041000.xml,1766,where have they took my xxx,GRA,www bring me some coffee,20.51488333,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/051013.xml,2144.25,the tooth fairy would have came anyhow,FRI,did you did did you have a good tooth over,2.99205,FALSE,FALSE,FALSE
+/content/drive/My Drive/childes/Eng-NA/Braunwald/070014.xml,2570.75,these two are pushed,MOT,yeah,12.29276667,FALSE,FALSE,FALSE
