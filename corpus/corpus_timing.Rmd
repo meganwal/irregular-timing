@@ -135,7 +135,6 @@ fixed_file_corpus_errors <- corpus_errors %>%
 
 timed_errors <- fixed_file_corpus_errors %>%
   filter(elan_coded) %>%
-  select(-response_time) %>%
   left_join(elan_response_times, by = c("corpus", "file", "utt_num")) %>%
   bind_rows(filter(fixed_file_corpus_errors, is.na(elan_coded))) %>%
   filter(responder != "SIS")
@@ -151,7 +150,8 @@ make_control_utts <- function(errors_df) {
   corpora <- pull(errors_df, corpus) %>% unique()
  
   possible_control_utts <- function(corpus) {
-    read_csv(here(glue("corpus/data/{corpus}_utterance_data.csv"))) %>%
+    possible_utts <-
+      read_csv(here(glue("corpus/data/{corpus}_utterance_data.csv"))) %>%
       #missing form sachs
       filter(response_time != "s1 or s2 media info not available") %>% 
       mutate(response_time = as.numeric(response_time),
@@ -161,14 +161,27 @@ make_control_utts <- function(errors_df) {
       mutate(length = str_count(utterance, " ") + 1) %>%
       filter(length >= 1) %>%
       group_by(source_file) %>%
-      mutate(age = process_age(age)) %>%
-      mutate(age_months = floor(age/30.5)) %>%
-      group_by(responder, age_months, length) %>%
-      nest() %>%
-      mutate(corpus = corpus)
+      mutate(age = process_age(age),
+             age_months = floor(age/30.5)) %>%
+      group_by(responder, age_months, length)
+    
+    if(! "start_time" %in% names(possible_utts)) {
+      possible_utts <- possible_utts %>%
+        mutate(start_time = 0) %>%
+        nest() %>%
+        mutate(corpus = corpus)
+    
+    } else {
+      possible_utts <- possible_utts %>%
+        mutate(start_time = as.numeric(start_time)) %>%
+        nest() %>%
+        mutate(corpus = corpus)
+    }
+    
+    return(possible_utts)
   }
   
-  utts <- map_dfr(corpora, possible_control_utts)
+  utts <- suppressWarnings(suppressMessages(map_dfr(corpora, possible_control_utts)))
 
   errors <- errors_df %>%
     mutate(age_months = floor(age/30.5)) %>%
@@ -186,6 +199,8 @@ make_control_utts <- function(errors_df) {
     group_by(corpus.x, age_months.x, responder.x, utterance, past_tense, plural, length.x,
              response_time) %>%
     unnest() %>%
+    ungroup() %>%
+    rowwise() %>%
     mutate(start_time = start_time / 60,
            source_file = str_split(source_file, "/") %>%  unlist() %>% last,
                   source_file = sub(".xml", "", source_file)) %>%
