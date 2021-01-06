@@ -14,7 +14,7 @@
         <String>default</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>1537270</Long>
+        <Long>350560</Long>
     </pref>
     <pref key="ExportTabDialog.SelectTiersMode">
         <String>Tier</String>
@@ -82,7 +82,7 @@
         <Object class="java.awt.Point">0,23</Object>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>1537130</Long>
+        <Long>349068</Long>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
@@ -91,10 +91,10 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>1529700</Long>
+        <Long>343148</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>1534950</Long>
+        <Long>349992</Long>
     </pref>
     <prefGroup key="TierColors">
         <pref key="parent_error_response">
@@ -103,14 +103,22 @@
         <pref key="default">
             <Object class="java.awt.Color">0,90,0</Object>
         </pref>
+        <pref key="child_control_utterance">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
         <pref key="child_error_utterance">
             <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="parent_control_response">
+            <Object class="java.awt.Color">90,160,90</Object>
         </pref>
     </prefGroup>
     <prefList key="MultiTierViewer.TierOrder">
         <String>default</String>
         <String>child_error_utterance</String>
         <String>parent_error_response</String>
+        <String>child_control_utterance</String>
+        <String>parent_control_response</String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
         <Int>2</Int>

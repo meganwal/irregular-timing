@@ -1,5 +1,5 @@
 ---
-title: "How to Make a Proceedings Paper Submission"
+title: "Response Times as Negative Evidence in Grammar Learning"
 bibliography: irregular_timing.bib
 csl: apa6.csl
 document-params: "10pt, letterpaper"

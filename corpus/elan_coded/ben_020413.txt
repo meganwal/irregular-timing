@@ -1,4 +1,6 @@
-Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
-1336610	1337920	error	
-1338050	1338980		response
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+1336610	1337920	error			
+1338050	1338980		response		
+1565910	1568770			control	
+1569630	1571525				response
 
