@@ -1,4 +1,6 @@
-Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
-797760	798890	error	
-799270	800040		response
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+711590	712210			control	
+712410	713330				response
+797760	798890	error			
+799270	800040		response		
 

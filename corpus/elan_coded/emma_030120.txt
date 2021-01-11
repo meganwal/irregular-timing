@@ -1,4 +1,8 @@
-Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
-89120	92160	error	
-92090	94150		response
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+89120	92160	error			
+92090	94150		response		
+268150	270400			control	
+270498	271190				response
+511804	514190			control	
+513579	516680				response
 

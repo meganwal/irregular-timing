@@ -1,6 +1,14 @@
-Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
-43540	45070	error	
-45105	45780		response
-45950	47820	error	
-47940	48520		response
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+43410	45070	error			
+45105	45780		response		
+45950	47820	error			
+47940	48520		response		
+572126	573650			control	
+573691	574640				response
+734503	736873			control	
+738200	738830				response
+881890	883640			control	
+884930	886410				response
+1551232	1552540			control	
+1554650	1557550				response
 

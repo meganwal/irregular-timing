@@ -1,10 +1,28 @@
-Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
-709000	712030	error	
-712220	713000		response
-1551890	1553820	error	
-1554860	1556110		response
-1750300	1751530	error	
-1752230	1753250		response
-1755760	1760200	error	
-1760720	1761540		response
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+8670	9960			control	
+10110	10770				response
+164295	167100			control	
+167742	168382				response
+194519	198980			control	
+198450	199030				response
+614891	616540			control	
+616590	619360				response
+709000	712030	error			
+712220	713000		response		
+757312	759152			control	
+760380	761810				response
+1149572	1151130			control	
+1152340	1152920				response
+1223363	1225330			control	
+1225923	1226860				response
+1466560	1468200			control	
+1468535	1471045				response
+1551890	1553820	error			
+1554860	1556110		response		
+1726060	1727330			control	
+1728110	1728613				response
+1750300	1751530	error			
+1752230	1753250		response		
+1755760	1760200	error			
+1760720	1761540		response		
 

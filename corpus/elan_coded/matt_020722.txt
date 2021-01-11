@@ -1,0 +1,6 @@
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+223070	228803			control	
+229360	232130				response
+1216920	1223650			control	
+1224030	1228710				response
+

@@ -1,4 +1,10 @@
-Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response
-561420	563480	error	
-563710	564786		response
+Begin Time - msec	End Time - msec	child_error_utterance	parent_error_response	child_control_utterance	parent_control_response
+275290	277350			control	
+277600	278460				response
+463320	464850			control	
+465620	467100				response
+561420	563480	error			
+563710	564786		response		
+994950	997390			control	
+997750	998280				response
 

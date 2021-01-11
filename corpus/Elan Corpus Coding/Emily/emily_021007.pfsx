@@ -26,6 +26,8 @@
         <String>default</String>
         <String>child_error_utterance</String>
         <String>parent_error_response</String>
+        <String>child_control_utterance</String>
+        <String>parent_control_response</String>
     </prefList>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
@@ -65,6 +67,8 @@
     <prefList key="ExportTabDialog.selectedTiers">
         <String>child_error_utterance</String>
         <String>parent_error_response</String>
+        <String>child_control_utterance</String>
+        <String>parent_control_response</String>
     </prefList>
     <prefList key="CommentViewer.Columns.Order">
         <String>Start Time</String>
@@ -97,7 +101,7 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>1543885</Long>
+        <Long>1531085</Long>
     </pref>
     <pref key="MediaTime">
         <Long>1618805</Long>
