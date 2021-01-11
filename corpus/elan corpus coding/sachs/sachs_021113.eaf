@@ -1,59 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2021-01-10T16:51:11-05:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2021-01-10T15:57:01-05:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///Users/megan/Documents/Childes Audio/Matt/040405.mp3" MIME_TYPE="audio/*" RELATIVE_MEDIA_URL="../../../../Childes Audio/Matt/040405.mp3"/>
-        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:230844ff-25e9-4a6a-89ef-b6f790128247</PROPERTY>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///Users/megan/Documents/Childes Audio/Sachs/021113.mp3" MIME_TYPE="audio/*" RELATIVE_MEDIA_URL="../../../../Childes Audio/Sachs/021113.mp3"/>
+        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:675c175b-4e32-46d8-a7bf-10fb1b8e75df</PROPERTY>
         <PROPERTY NAME="lastUsedAnnotationId">6</PROPERTY>
     </HEADER>
     <TIME_ORDER>
-        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="59680"/>
-        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="67150"/>
-        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="67277"/>
-        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="68450"/>
-        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="196960"/>
-        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="207380"/>
-        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="210290"/>
-        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="211168"/>
-        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="659250"/>
-        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="667737"/>
-        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="668210"/>
-        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="670160"/>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="544360"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="545310"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="545460"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="545780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="1211250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="1213340"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="1213810"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="1223590"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="1507310"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="1508240"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="1508265"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="1508990"/>
     </TIME_ORDER>
     <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="default"/>
-    <TIER LANG_REF="und" LINGUISTIC_TYPE_REF="child_utterance" TIER_ID="child_error_utterance">
-        <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" CVE_REF="cveid_33107ad5-8bb1-47b0-a012-7b095cb361fe" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts11">
-                <ANNOTATION_VALUE>error</ANNOTATION_VALUE>
-            </ALIGNABLE_ANNOTATION>
-        </ANNOTATION>
-    </TIER>
-    <TIER LINGUISTIC_TYPE_REF="parent_response" TIER_ID="parent_error_response">
-        <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" CVE_REF="cveid_2a45df7c-9c6f-4f17-a84a-ff59b2253118" TIME_SLOT_REF1="ts10" TIME_SLOT_REF2="ts12">
-                <ANNOTATION_VALUE>response</ANNOTATION_VALUE>
-            </ALIGNABLE_ANNOTATION>
-        </ANNOTATION>
-    </TIER>
+    <TIER LANG_REF="und" LINGUISTIC_TYPE_REF="child_utterance" TIER_ID="child_error_utterance"/>
+    <TIER LINGUISTIC_TYPE_REF="parent_response" TIER_ID="parent_error_response"/>
     <TIER LINGUISTIC_TYPE_REF="child_utterance" TIER_ID="child_control_utterance">
         <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" CVE_REF="cveid_b38c9a0f-e617-4078-a43d-da62fe919e11" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" CVE_REF="cveid_fb569133-0899-45fe-9e52-74a7f99a0400" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
                 <ANNOTATION_VALUE>control</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" CVE_REF="cveid_b38c9a0f-e617-4078-a43d-da62fe919e11" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" CVE_REF="cveid_fb569133-0899-45fe-9e52-74a7f99a0400" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>control</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" CVE_REF="cveid_fb569133-0899-45fe-9e52-74a7f99a0400" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
                 <ANNOTATION_VALUE>control</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>
     <TIER LINGUISTIC_TYPE_REF="parent_response" TIER_ID="parent_control_response">
         <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" CVE_REF="cveid_2a45df7c-9c6f-4f17-a84a-ff59b2253118" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" CVE_REF="cveid_2a45df7c-9c6f-4f17-a84a-ff59b2253118" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
                 <ANNOTATION_VALUE>response</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" CVE_REF="cveid_2a45df7c-9c6f-4f17-a84a-ff59b2253118" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" CVE_REF="cveid_2a45df7c-9c6f-4f17-a84a-ff59b2253118" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>response</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" CVE_REF="cveid_2a45df7c-9c6f-4f17-a84a-ff59b2253118" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
                 <ANNOTATION_VALUE>response</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
@@ -77,7 +75,7 @@
         <CV_ENTRY_ML CVE_ID="cveid_33107ad5-8bb1-47b0-a012-7b095cb361fe">
             <CVE_VALUE LANG_REF="und">error</CVE_VALUE>
         </CV_ENTRY_ML>
-        <CV_ENTRY_ML CVE_ID="cveid_b38c9a0f-e617-4078-a43d-da62fe919e11">
+        <CV_ENTRY_ML CVE_ID="cveid_fb569133-0899-45fe-9e52-74a7f99a0400">
             <CVE_VALUE LANG_REF="und">control</CVE_VALUE>
         </CV_ENTRY_ML>
     </CONTROLLED_VOCABULARY>
