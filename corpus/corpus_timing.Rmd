@@ -23,6 +23,7 @@ theme_set(theme_few(base_size = 12))
 
 ```
 
+Parsing age from file name and pulling possible error utterances
 ```{r helpers}
 process_age <- function(age) {
   age_list <- sub("\\['P", "", age) %>%
@@ -72,6 +73,7 @@ process_errors <- function(corpus) {
 
 ```
 
+Create CSVs of all possible errors
 ```{r process-errors, warning = FALSE, eval = FALSE}
 process_errors("braunwald")
 process_errors("sachs")
@@ -83,6 +85,7 @@ process_errors("matt")
 process_errors("roman")
 ```
 
+Read in CSVs with marked errors
 ```{r read-errors}
 read_errors <- function(corpus) {
   coded <- read_csv(here(glue("corpus/coded_data/{corpus}_coded.csv")))
@@ -100,6 +103,7 @@ corpus_errors <- map_dfr(corpus_list, read_errors, .id = "corpus") %>%
          length = str_count(utterance, " ") + 1)
 ```
 
+Read in elan files and response times
 ```{r read-elan}
 read_elan <- function(file, directory = here("corpus/elan_coded")) {
   read_delim(glue("{directory}/{file}"), "\t") %>%
@@ -118,6 +122,7 @@ read_elan <- function(file, directory = here("corpus/elan_coded")) {
 }
 ```
 
+Creating dataframe of errors & responses
 ```{r load_response_times}
 elan_files <- list.files(here("corpus/elan_coded/"))
 
@@ -145,6 +150,8 @@ ggplot(timed_errors, aes(x = response_time)) +
   geom_histogram()
 ```
 
+
+Making control utterances
 ```{r make-control-utts}
 make_control_utts <- function(errors_df) {
   corpora <- pull(errors_df, corpus) %>% unique()
@@ -293,7 +300,6 @@ iteratively_sample <- function(utts, diff_n) {
 }
 ```
 
-
 ```{r sample-controls}
 SAMPLE_N <- 3
 errors <- make_control_utts(timed_errors)
@@ -314,9 +320,10 @@ ggplot(child_data, aes(x = response_time, color = error))  +
   geom_density()
 ```
 
+--------------------------------------------------------------------------------
+Nelson had no errors
 ```{r nelson, eval = FALSE, show = FALSE}
 process_errors("nelson")
-#found no errors
 
 nelson_utts <- read_csv(here(glue("data/nelson_utterance_data.csv"))) %>%
   mutate(error = as.logical(error),
