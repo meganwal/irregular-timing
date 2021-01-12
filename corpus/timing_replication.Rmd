@@ -1,0 +1,131 @@
+---
+title: "Experiment 2 timing"
+author: "Megan Waller and Dan Yurovsky"
+date: '`r Sys.Date()`'
+output:
+  html_document:
+  highlight: tango
+theme: sandstone
+code_folding: show
+toc: false
+toc_float: false
+---
+  
+```{r libraries}
+library(tidyverse)
+library(here)
+library(ggthemes)
+library(glue)
+library(janitor)
+library(fuzzyjoin)
+
+theme_set(theme_few(base_size = 12))
+
+```
+
+```{r timing-coded-files}
+elan_files <- list.files(here("corpus/elan_coded"), pattern = "*.txt", 
+                         full.names = TRUE)
+
+raw_elan_coded <- map_dfr(elan_files, ~read_delim(.x, delim = "\t") %>% 
+                        mutate(file = .x)) %>%
+  clean_names() 
+
+elan_coded <- raw_elan_coded %>%
+  pivot_longer(cols = child_error_utterance:parent_control_response,
+               names_to = "type") %>%
+  filter(!is.na(value)) %>%
+  mutate(file = str_split(file, "//")) %>%
+  rowwise() %>%
+  mutate(file = file[2]) %>%
+  ungroup() %>%
+  mutate(file = str_remove(file, ".txt")) %>%
+  separate(file, into = c("corpus", "file"), sep = "_") %>%
+  group_by(corpus, file) %>%
+  mutate(index = 1:n(),
+         diff = begin_time_msec - lag(end_time_msec)) %>%
+  filter( index %% 2 == 0) %>%
+  ungroup() %>%
+  mutate(type = if_else(str_detect(type, "error"), "error", "control")) 
+```
+
+```{r timing-to-code}
+coded_metadata_files <- list.files(here("corpus/coded_data"), pattern = "*.csv", 
+                         full.names = TRUE)
+
+experimental_metadata_files <- coded_metadata_files %>%
+  enframe(name = NULL, value = "name") %>%
+  filter(!str_detect(name ,"control")) %>%
+  pull(name)
+
+
+experimental_metadata <- map_dfr(experimental_metadata_files, read_csv) %>%
+  filter(elan_coded) %>%
+  rowwise() %>%
+  mutate(source_file = str_split(source_file, "/")) %>%
+  rowwise() %>%
+  mutate(file = source_file %>% unlist() %>% last(),
+         corpus = source_file %>% unlist() %>% nth(-2)) %>%
+  ungroup() %>%
+  mutate(corpus = str_to_lower(corpus),
+         file = str_remove(file, ".xml")) %>%
+  select(-source_file) %>%
+  group_by(corpus, file) %>%
+  mutate(n = 1:n())
+
+control_metadata_file <- coded_metadata_files %>%
+  enframe(name = NULL, value = "name") %>%
+  filter(str_detect(name ,"control")) %>%
+  pull(name)
+
+control_metadata <- read_csv(control_metadata_file) %>%
+  rename(file = control_file) %>%
+  rowwise() %>%
+  mutate(file = if_else(!str_detect(file, "[:alpha:]"),
+                        glue("0{file}"), file)) %>%
+  ungroup() %>%
+  filter(elan_coded) %>%
+  group_by(corpus, file) %>%
+  arrange(control_start_time_minutes) %>%
+  mutate(n = 1:n())
+```
+
+```{r join-files}
+elan_error_coded <- elan_coded %>%
+  filter(type == "error") %>%
+  group_by(corpus, file) %>%
+  mutate(n = 1:n()) %>%
+  select(corpus, file, n, diff)
+
+experimental_coded <- left_join(experimental_metadata, elan_error_coded,
+                                by = c("corpus", "file", "n")) %>%
+  mutate(type = "experimental",
+         utt_len = str_count(utterance, " ") + 1,
+         response_len =  str_count(response, " ") + 1) %>%
+  select(type, corpus, file, age, overreg_past, overreg_plural, diff, 
+         utt_len, response_len)
+
+elan_control_coded <- elan_coded %>%
+  filter(type == "control") %>%
+  group_by(corpus, file) %>%
+  mutate(n = 1:n()) %>%
+  select(corpus, file, n, diff)
+
+control_coded <- left_join(control_metadata, elan_control_coded,
+                                by = c("corpus", "file", "n")) %>%
+  mutate(age = 0, overreg_past = FALSE, overreg_plural = FALSE) %>%
+  mutate(type = "control",
+         utt_len = str_count(control_utterance, " ") + 1,
+         response_len =  str_count(control_response, " ") + 1) %>%
+  select(type, corpus, file, age, overreg_past, overreg_plural, diff, 
+         utt_len, response_len)
+
+
+model_data <- bind_rows(experimental_coded, control_coded) 
+```
+
+```{r analysis}
+lmer(diff ~ type + utt_len + response_len + (1 | corpus), 
+     data = model_data %>% filter(diff <= 5000)) %>%
+  summary()
+```
