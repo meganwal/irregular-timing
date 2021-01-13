@@ -1,0 +1,110 @@
+age,utterance,responder,response,overreg_past,overreg_plural,start_time_minutes,elan_coded,file,corpus,n,reformulation,repetition
+865.5,it falled out,MOT,it fall out,TRUE,FALSE,22.2559,TRUE,20413,ben,1,1,0
+978.5,it wa it was broked off,RYA,it was broked off,TRUE,FALSE,22.5452667,TRUE,20804,ben,1,0,1
+1177.75,he sleeped,MOT,and then what,TRUE,FALSE,20.00805,TRUE,30221,ben,1,0,0
+689.25,felled,MOT,you like to go to the beach,TRUE,FALSE,6.50015,TRUE,11019,braunwald,1,0,0
+822,I heared it,MOT,you didn't,TRUE,FALSE,24.54785,TRUE,020300a,braunwald,1,0,0
+845,bird flewed at me,MOT,yes,TRUE,FALSE,2.671283333,TRUE,20323,braunwald,1,0,0
+934.5,ah animals and fishes,MOT,animals and fishes,FALSE,TRUE,3.45275,TRUE,20621,braunwald,1,0,1
+1276.25,my toast is burned,MOT,uhuh,TRUE,FALSE,3.219316667,TRUE,030528a,braunwald,1,0,0
+1692.5,I got it and it was all breaked,MOT,it was all broken,TRUE,FALSE,4.017133333,TRUE,040718d,braunwald,1,1,0
+919.5,he drinked it all,CAR,he drinked it all,TRUE,FALSE,38.5225,TRUE,20606,emily,1,0,1
+948,the scrap book falled in the water,CAR,yeah,TRUE,FALSE,11.81675,TRUE,20704,emily,1,0,0
+948,the phone run runned on,CAR,the answering machine,TRUE,FALSE,25.86203333,TRUE,20704,emily,2,0,0
+948,I drawed with him,CAR,what'd you draw,TRUE,FALSE,29.15705,TRUE,20704,emily,3,1,0
+948,I drawed chalk only for kids,CAR,what's for kids,TRUE,FALSE,29.218,TRUE,20704,emily,4,0,0
+962,I falled off o there,CAR,no this happened last weekend,TRUE,FALSE,5.99705,TRUE,20718,emily,1,0,0
+962,he waked up,CAR,he did,TRUE,FALSE,26.07825,TRUE,20718,emily,2,0,0
+973,right on his foots,CAR,he did,FALSE,TRUE,16.44675,TRUE,20729,emily,1,0,0
+1007,he flied a big plane to his mommy and daddy,CAR,mm hm,TRUE,FALSE,2.31335,TRUE,20902,emily,1,0,0
+1007,but he he goed to his mommy and daddy way over there,CAR,how'd you get that boo_boo,TRUE,FALSE,15.61641667,TRUE,20902,emily,2,0,0
+1007,I fighted with her too,CAR,you fought with Grandma,TRUE,FALSE,18.28383333,TRUE,20902,emily,3,1,0
+1028,I swinged it on my head,CAR,did that hurt,TRUE,FALSE,4.550633333,TRUE,20923,emily,1,0,0
+1042.5,mouses don't drive in crayons car,CAR,I know they don't,FALSE,TRUE,16.10658333,TRUE,21007,emily,1,0,0
+1042.5,have you hadded presents and cake,CAR,I did,TRUE,FALSE,20.04045,TRUE,21007,emily,2,0,0
+1042.5,my cat ate my three mouses,CAR,you have three mice,FALSE,TRUE,21.12303333,TRUE,21007,emily,3,1,0
+1042.5,I Daddy Stuart_Little and Mom Stuart_Little and I I have three mouses,CAR,oh okay,FALSE,TRUE,21.29648333,TRUE,21007,emily,4,0,0
+1042.5,my cat tried to eat my mouses,CAR,when,FALSE,TRUE,21.46855,TRUE,21007,emily,5,0,0
+1042.5,my but my cat eat mouses,CAR,why do you call them mice sometimes and mouses other times,FALSE,TRUE,21.67221667,TRUE,21007,emily,6,1,0
+1042.5,mouses,CAR,okay,FALSE,TRUE,22.06006667,TRUE,21007,emily,7,0,0
+1042.5,mouses outside,CAR,what do mice do,FALSE,TRUE,22.0969,TRUE,21007,emily,8,1,0
+1042.5,my mouses gatta a babysitter,CAR,they're at the babysitters,FALSE,TRUE,29.35561667,TRUE,21007,emily,9,0,0
+1042.5,my mouses are back in my baby,CAR,they're back in your baby,FALSE,TRUE,29.5604,TRUE,21007,emily,10,0,0
+1081,Mommy writed a letter and I writed a letter,CAR,did you put up a Christmas tree,TRUE,FALSE,2.2024,TRUE,21115,emily,1,0,0
+1081,I ripped it sinced I goed to bed,CAR,oh you ripped it since you went to bed,TRUE,FALSE,13.54418333,TRUE,21115,emily,2,1,0
+1081,I goed like this I goed like this when I goed ow,CAR,you hit yourself,TRUE,FALSE,24.44428333,TRUE,21115,emily,3,0,0
+1081,I doed this when I goed ow,CAR,mm hm,TRUE,FALSE,24.5438,TRUE,21115,emily,4,0,0
+1107.75,and we comed over and then it was your birthday and we make the cake,CAR,yeah,TRUE,FALSE,3.5519,TRUE,30012,emily,1,0,0
+1107.75,it died then the air comed out,CAR,oh,TRUE,FALSE,8.561333333,TRUE,30012,emily,2,0,0
+1107.75,no she falled down,CAR,yeah she did,TRUE,FALSE,25.48353333,TRUE,30012,emily,3,0,0
+1226.75,and Mommy sitted there they came here and they gave it to my mommy and she sat there and I'm gonna buy one of those toys for Tiki whoa,CAR,look out what just happened,TRUE,FALSE,1.766116667,TRUE,30409,emily,1,0,0
+1538,well it got teared down,CAR,uhhuh,TRUE,FALSE,9.31445,TRUE,40216,emily,1,0,0
+1082,yes and the roar was so scared the flower goed away,FAT,the flower goed away,TRUE,FALSE,8.21185,TRUE,21116,emma,1,0,1
+1082,she just waked up,FAT,oh she just woke she just waked up,TRUE,FALSE,18.80676667,TRUE,21116,emma,2,0,1
+1082,she put it on it and the baby falled over,FAT,the baby falled over,TRUE,FALSE,19.79703333,TRUE,21116,emma,3,0,1
+1098.75,I just goed past you,FAT,you did go yeah,TRUE,FALSE,10.59941667,TRUE,30003,emma,1,1,0
+1146.25,that my grandpa drawed that and grandpa drawed that,JES,grandpa helped you,TRUE,FALSE,1.425083333,TRUE,30120,emma,1,0,0
+1330.25,he just r runned an gave it to me,JES,oh he brought it back,TRUE,FALSE,22.88621667,TRUE,30721,emma,1,0,0
+1377.25,yeah I maded it and I have I had kayak clothes on,FAT,oh great okay I get it,TRUE,FALSE,28.97626667,TRUE,30907,emma,1,0,0
+1377.25,I just buyed chocolate milk,JES,you did,TRUE,FALSE,30.91843333,TRUE,30907,emma,2,0,0
+1377.25,I drinked it all,JES,good,TRUE,FALSE,31.56906667,TRUE,30907,emma,3,0,0
+1552.5,and she even bringed a slide,LAU,a slide,TRUE,FALSE,0.196683333,TRUE,40300,emma,1,0,0
+1552.5,no she bringed all these aminals but she didn't bring this,LAU,oh the silo,TRUE,FALSE,1.775016667,TRUE,40300,emma,2,0,0
+1552.5,Jessica only bringed two o these,LAU,did she ever bring the big people too not like the little ones like this,TRUE,FALSE,4.885966667,TRUE,40300,emma,3,1,0
+1552.5,we gotted,LAU,oh we got everybody,TRUE,FALSE,9.271383333,TRUE,40300,emma,4,1,0
+1573.5,the dog waked you up,LAU,maybe I should go back to bed huh,TRUE,FALSE,28.38351667,TRUE,40321,emma,1,0,0
+1573.5,someone throwed me forty four times on the ground,LAU,they threw you on the ground,TRUE,FALSE,30.01148333,TRUE,40321,emma,2,1,0
+1601,I heard that we need chocolate chips and I bringed them over,LAU,mhm,TRUE,FALSE,7.745383333,TRUE,40418,emma,1,0,0
+1601,it's from Hans and Tamara sended it to us,LAU,who sent it to you,TRUE,FALSE,18.83481667,TRUE,40418,emma,2,1,0
+1709,I know where we hided it,LAU,is it a chocolate cake too,TRUE,FALSE,30.34955,TRUE,40804,emma,1,0,0
+762,he falled,JEN,he falled,TRUE,FALSE,14.48725,TRUE,20101,jillian,1,0,1
+762,he falled,MOT,so mommy can't xxx the couch,TRUE,FALSE,16.3885,TRUE,20101,jillian,2,0,0
+769,I taked a shower,MOT,in the do you remember in the what in the sprinkler,TRUE,FALSE,13.21043333,TRUE,20108,jillian,1,0,0
+778,I swimmed in the bathtub,MOT,and who who do you pretend to be when you're in the bathtub,TRUE,FALSE,14.37141667,TRUE,20117,jillian,1,0,0
+778,I sayed nothin,JEN,you said nothing,TRUE,FALSE,27.2636,TRUE,20117,jillian,2,1,0
+790,they sayed hi,JEN,they said hi,TRUE,FALSE,16.90391667,TRUE,20129,jillian,1,1,0
+790,I maked a a coat,MOT,it's cold,TRUE,FALSE,25.4876,TRUE,20129,jillian,2,0,0
+797.5,he taked his beard off,MOT,he did,TRUE,FALSE,16.791,TRUE,20206,jillian,1,0,0
+797.5,I drawed xxx beach,MOT,you drawed the beach,TRUE,FALSE,25.54018333,TRUE,20206,jillian,2,0,1
+839,he drinked milk,JEN,oh he drinked milk,TRUE,FALSE,7.54155,TRUE,20317,jillian,1,0,1
+839,his mommy his mommy goed to work,JEN,yeah,TRUE,FALSE,7.60635,TRUE,20317,jillian,2,0,0
+839,I drawed the sun,JEN,you did,TRUE,FALSE,14.23348333,TRUE,20317,jillian,3,0,0
+839,I drawed the sun,JEN,very good,TRUE,FALSE,14.30026667,TRUE,20317,jillian,4,0,0
+839,my cousins maked me a castle and I played with it,JEN,you did,TRUE,FALSE,30.12656667,TRUE,20317,jillian,5,0,0
+847,I singed a song to the dinosaurs and then they were sleeping,CAT,really,TRUE,FALSE,4.6179,TRUE,20325,jillian,1,0,0
+847,and I doed that yester when I goed to school,JEN,can I see it,TRUE,FALSE,19.83948333,TRUE,20325,jillian,2,0,0
+866.5,somebody drawed that picture,MOT,somebody did draw that picture,TRUE,FALSE,15.63918333,TRUE,20414,jillian,1,1,0
+873.5,drawed Jessie the cow,CAT,very good,TRUE,FALSE,27.57793333,TRUE,20421,jillian,1,0,0
+880.5,I baked you the milk and I maked you a burger,MOT,thanks,TRUE,FALSE,13.07145,TRUE,20428,jillian,1,0,0
+890,well I throwed the giant away,CAT,okay but next time were gonna just pretend to throw him okay,TRUE,FALSE,28.20293333,TRUE,20507,jillian,1,1,0
+904,we getted a pixies,CAT,and what did you get,TRUE,FALSE,19.3605,TRUE,20521,jillian,1,1,0
+904,I getted a pixies and a candy,CAT,you got candy right,TRUE,FALSE,19.43641667,TRUE,20521,jillian,2,1,0
+909,drinked water and they,MOT,when they were very tired they usually,TRUE,FALSE,8.640166667,TRUE,20526,jillian,1,0,0
+929.5,when he camed,CAT,that's a great story,TRUE,FALSE,1.445566667,TRUE,20616,jillian,1,0,0
+929.5,flied around the dinosaurs,CAT,he did,TRUE,FALSE,3.8958,TRUE,20616,jillian,2,0,0
+929.5,and then I hided,CAT,oh no,TRUE,FALSE,4.13465,TRUE,20616,jillian,3,0,0
+929.5,only all my friends camed,CAT,wow,TRUE,FALSE,8.065216667,TRUE,20616,jillian,4,0,0
+929.5,and then all the mommy was and then the Jillysaurs camed,CAT,the Jillysaurs came,TRUE,FALSE,8.8553,TRUE,20616,jillian,5,1,0
+929.5,then you growed up now to be the daddy,CAT,yep and now I'm a daddy dinosaur,TRUE,FALSE,21.04918333,TRUE,20616,jillian,6,0,0
+929.5,they're growed up,CAT,they did,TRUE,FALSE,21.49611667,TRUE,20616,jillian,7,0,0
+929.5,you growed up and then that's the daddy,CAT,oh,TRUE,FALSE,30.19975,TRUE,20616,jillian,8,0,0
+951,he went home and ated some trees that were brokened,INV,oh okay,TRUE,FALSE,18.67058333,TRUE,20707,jillian,1,0,0
+951,he falled into this river,INV,he did,TRUE,FALSE,18.89198333,TRUE,20707,jillian,2,0,0
+1021,they doed her maked her do her chores,MOT,they made her do her chores,TRUE,FALSE,3.276566667,TRUE,20916,jillian,1,1,0
+893,okay I founding the little mans,MOT,did you say finding or founding,FALSE,TRUE,NA,TRUE,20510,matt,1,1,0
+951,he um fly flying his he flyed his kite and it fell on the cow,MOT,that's right he flyed his kite and then it fell on the cow,TRUE,FALSE,NA,TRUE,20707,matt,1,0,1
+951,it flyed,MOT,it flyed,TRUE,FALSE,NA,TRUE,20707,matt,2,0,1
+1588,he stucked his hand in it he stucked his hand in it,MOT,he sticks his hand in it he did,TRUE,FALSE,NA,TRUE,40405,matt,1,1,0
+917.5,I broked it,JEN,you broked it that's right,TRUE,FALSE,NA,TRUE,20604,roman,1,0,1
+1036.5,sleept,JEN,you sleept,TRUE,FALSE,NA,TRUE,21001,roman,1,0,1
+1395.25,and after dat he goed dose some caves and de Aladar and de jungle and den they climbed in dere and after dat after dat it closed,FAT,all the rocks came down,TRUE,FALSE,NA,TRUE,30925,roman,1,0,0
+1409.75,I felled on a carpet,KAR,on the carpet,TRUE,FALSE,NA,TRUE,31009,roman,1,0,0
+1655,and and it stunged me right here,FAT,xxx it stunged you right here right above the eye,TRUE,FALSE,NA,TRUE,40611,roman,1,0,1
+1694.5,um number two um um he bendeded a camp,CAR,um hm,TRUE,FALSE,NA,TRUE,40720,roman,1,0,0
+1014,yester morning I maked a tiger,MOT,you did,TRUE,FALSE,NA,TRUE,20909,sachs,1,0,0
+1078,you getted the blister out,MOT,yeah I didn't take that one out did I,TRUE,FALSE,NA,TRUE,21112,sachs,1,0,0
+1078,I writed a,MOT,well somebody in the store made that circle around that color honey,TRUE,FALSE,NA,TRUE,21112,sachs,2,0,0
+1078,somebody writed more,MOT,mhm,TRUE,FALSE,NA,TRUE,21112,sachs,3,0,0
+1214.25,and one two mean mans,FAT,two mean mans and one mean lady,FALSE,TRUE,NA,TRUE,30327,sachs,1,0,1
+1702.5,I bented my belly,FAT,you did what,TRUE,FALSE,NA,TRUE,40728,sachs,1,0,0
+1702.5,I bented my belly,FAT,oh,TRUE,FALSE,NA,TRUE,40728,sachs,2,0,0

@@ -24,7 +24,7 @@ theme_set(theme_few(base_size = 12))
 ```
 
 ```{r timing-coded-files}
-elan_files <- list.files(here("corpus/elan_coded"), pattern = "*.txt", 
+elan_files <- list.files(here("corpus/elan_coded/"), pattern = "*.txt", 
                          full.names = TRUE)
 
 raw_elan_coded <- map_dfr(elan_files, ~read_delim(.x, delim = "\t") %>% 
@@ -75,7 +75,7 @@ experimental_metadata <- map_dfr(experimental_metadata_files, read_csv) %>%
 
 control_metadata_file <- coded_metadata_files %>%
   enframe(name = NULL, value = "name") %>%
-  filter(str_detect(name ,"control")) %>%
+  filter(str_detect(name ,"indexed")) %>%
   pull(name)
 
 control_metadata <- read_csv(control_metadata_file) %>%
@@ -113,7 +113,14 @@ elan_control_coded <- elan_coded %>%
 
 control_coded <- left_join(control_metadata, elan_control_coded,
                                 by = c("corpus", "file", "n")) %>%
-  mutate(age = 0, overreg_past = FALSE, overreg_plural = FALSE) %>%
+  mutate(numeric_file = str_remove(file, "[:alpha:]") %>%
+           as.numeric(),
+         years = as.numeric(str_sub(numeric_file, 1, 1)),
+         months = as.numeric(str_sub(numeric_file, 2, 3)),
+         days = as.numeric(str_sub(numeric_file, 4, 5)),
+         age = years * 365.25 + months* 30.5 + days) %>%
+  select(-years, -months, -days, -numeric_file) %>%
+  mutate(overreg_past = FALSE, overreg_plural = FALSE) %>%
   mutate(type = "control",
          utt_len = str_count(control_utterance, " ") + 1,
          response_len =  str_count(control_response, " ") + 1) %>%
@@ -124,8 +131,108 @@ control_coded <- left_join(control_metadata, elan_control_coded,
 model_data <- bind_rows(experimental_coded, control_coded) 
 ```
 
+```{r}
+ggplot(model_data %>% filter(abs(diff)<= 2000, corpus == "jillian"), aes(x = diff, 
+                                                    color = type)) + 
+  geom_density()
+```
+
+```{r}
+model_data %>%
+  filter(corpus == "emma", abs(diff) <= 5000) %>%
+  group_by(type) %>%
+  summarise(diff = mean(diff))
+```
+```{r}
+scale_model_data <- model_data %>%
+  group_by(corpus) %>%
+  mutate(scale_diff = scale(diff)[1])
+```
+
 ```{r analysis}
-lmer(diff ~ type + utt_len + response_len + (1 | corpus), 
-     data = model_data %>% filter(diff <= 5000)) %>%
+lm(diff ~ type + response_len + utt_len, 
+     data = scale_model_data %>% filter(diff <= 5000)) %>%
+  summary()
+```
+
+```{r}
+braunwald_automatic <- utts %>%
+  filter(corpus == "braunwald") %>%
+  mutate(source_file = str_split(source_file, "/")) %>%
+  rowwise() %>%
+  mutate(file = source_file %>% unlist() %>% last()) %>%
+  ungroup() %>%
+  mutate(file = str_remove(file, ".xml")) %>%
+  select(utterance, response_time, file)
+  
+
+braunwald_automatic_timing <- control_metadata %>%
+  filter(corpus == "braunwald") %>%
+  left_join(braunwald_automatic, 
+            by = c("file", "control_utterance" = "utterance")) %>%
+  filter(response_time <= 5000 )
+
+ggplot(braunwald_automatic_timing, aes(x = response_time)) + 
+  geom_density() + 
+  geom_vline(aes(xintercept = 0))
+
+
+ggplot(model_data %>% filter(corpus == "braunwald", type == "experimental",
+                             abs(diff) <= 5000),
+       aes(x = diff)) + 
+  geom_density() + 
+  geom_vline(aes(xintercept = 0))
+
+model_data %>% filter(corpus == "braunwald", type == "control",
+                             abs(diff) <= 5000) %>%
+  ungroup() %>%
+  summarise(diff = mean(diff))
+
+braunwald_automatic_timing %>% 
+  filter(abs(response_time) <= 5000) %>%
+  ungroup() %>%
+  summarise(diff = mean(response_time))
+```
+
+```{r}
+
+braunwald_automatic_error_timing <- experimental_metadata %>%
+  filter(corpus == "braunwald") %>%
+  left_join(braunwald_automatic, 
+            by = c("file", "utterance" = "utterance")) %>%
+  filter(response_time <= 5000 )
+
+braunwald_automatic_error_timing %>% 
+  filter(abs(response_time) <= 5000) %>%
+  ungroup() %>%
+  summarise(diff = mean(response_time))
+
+model_data %>% filter(corpus == "braunwald", type == "experimental",
+                             abs(diff) <= 5000) %>%
+  ungroup() %>%
+  summarise(diff = mean(diff))
+
+```
+
+```{r}
+coded_metadata <- read_csv("experimental_metadata.csv") %>%
+  rowwise() %>%
+  mutate(neither = if_else(reformulation == 0 && repetition == 0, 1, 0),
+        file = if_else(!str_detect(file, "[:alpha:]"),
+                        glue("0{file}"), file)) %>%
+  ungroup() %>%
+  pivot_longer(cols = c(reformulation, repetition, neither), names_to = "response_type") %>%
+  filter(value == 1) %>%
+  left_join(elan_error_coded, by = c("corpus", "file", "n")) %>%
+  mutate(utt_len = str_count(utterance, " ") + 1,
+         response_len =  str_count(response, " ") + 1) 
+
+ggplot(coded_metadata, aes(x = diff, color = response_type)) + 
+  geom_density()
+```
+
+```{r}
+lm(diff ~ response_type , data = coded_metadata %>%
+     filter(response_type != "neither")) %>%
   summary()
 ```
