@@ -14,7 +14,7 @@
         <String>default</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>673800</Long>
+        <Long>672170</Long>
     </pref>
     <pref key="ExportTabDialog.SelectTiersMode">
         <String>Tier</String>
@@ -86,7 +86,7 @@
         <Object class="java.awt.Point">10,23</Object>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>672860</Long>
+        <Long>671330</Long>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
@@ -95,10 +95,10 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>667025</Long>
+        <Long>665385</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>673800</Long>
+        <Long>671045</Long>
     </pref>
     <prefGroup key="TierColors">
         <pref key="parent_error_response">
