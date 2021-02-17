@@ -98,10 +98,10 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>501589</Long>
+        <Long>88560</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>509509</Long>
+        <Long>94337</Long>
     </pref>
     <prefGroup key="TierColors">
         <pref key="parent_error_response">

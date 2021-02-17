@@ -5,7 +5,7 @@
         <Object class="java.awt.Dimension">1217,792</Object>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
-        <Int>7</Int>
+        <Int>0</Int>
     </pref>
     <pref key="LayoutManager.VisibleMultiTierViewer">
         <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
@@ -14,7 +14,7 @@
         <String>default</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>968301</Long>
+        <Long>794660</Long>
     </pref>
     <pref key="ExportTabDialog.SelectTiersMode">
         <String>Tier</String>
@@ -82,11 +82,14 @@
     <pref key="ActiveRecognizerName">
         <String>AAM-LR Phone level audio segmentation</String>
     </pref>
+    <pref key="GridViewer.TierName">
+        <String>child_error_utterance</String>
+    </pref>
     <pref key="FrameLocation">
         <Object class="java.awt.Point">117,23</Object>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>968301</Long>
+        <Long>794660</Long>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
@@ -95,10 +98,10 @@
     </prefGroup>
     <prefList key="MultiTierViewer.HiddenTiers"/>
     <pref key="TimeScaleBeginTime">
-        <Long>967491</Long>
+        <Long>793020</Long>
     </pref>
     <pref key="MediaTime">
-        <Long>968301</Long>
+        <Long>796323</Long>
     </pref>
     <prefGroup key="TierColors">
         <pref key="parent_error_response">
